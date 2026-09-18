@@ -1,0 +1,1768 @@
+GFS archive: 2025101500 f000 +13 record(s).
+GFS archive: 2025101500 f003 +10 record(s).
+GFS archive: 2025101500 f006 +2 record(s).
+GFS archive: 2025101506 f000 +2 record(s).
+GFS archive: 2025101512 f000 +2 record(s).
+GFS archive: 2025101600 f000 +2 record(s).
+BOXOLOGY ON REAL DATA — GFS 2025-10-15 00Z, conus window
+
+1. FIDELITY — does reading it off two contour families measure the advection?
+   boxology advection rms 5.01 K/day, on 74% of the window
+     vs model layer-mean (1000-500) advection  corr +0.899   slope +0.779   rms 4.38
+     vs model 1000 mb advection                corr +0.639   slope +0.329   rms 2.79
+     vs model 850 mb advection                 corr +0.843   slope +0.853   rms 5.05
+     vs model 700 mb advection                 corr +0.778   slope +0.766   rms 4.89
+     vs model 500 mb advection                 corr +0.896   slope +1.169   rms 6.49
+   advecting wind, rms m/s:
+     boxology V0 (geostrophic 1000)            9.07
+     model layer-mean (1000-500)               9.68
+     model 1000 mb                             6.26
+     model 850 mb                              8.58
+     model 700 mb                             11.23
+     model 500 mb                             17.39
+
+2. ATTRIBUTION — is that advection the local tendency? (centered 6h)
+   smoothing    boxology vs tendency   true adv vs tendency   boxology vs true adv
+     42 km     corr +0.561 slope +0.397   corr +0.565 slope +0.475   corr +0.878 slope +0.739
+     83 km     corr +0.565 slope +0.397   corr +0.579 slope +0.496   corr +0.895 slope +0.733
+    166 km     corr +0.568 slope +0.384   corr +0.584 slope +0.493   corr +0.877 slope +0.702
+    333 km     corr +0.571 slope +0.350   corr +0.579 slope +0.444   corr +0.859 slope +0.686
+   => advection over-predicts the tendency 2.5x; about 60% of it is canceled
+
+3. CONSEQUENCE — the kinematic forecast against persistence
+   +  6 h   RMSE  1.84 dam   persistence  1.80   SS -0.041   (scaled by 0.44: SS +0.414)   cover  70%
+   + 12 h   RMSE  3.22 dam   persistence  3.46   SS +0.136   (scaled by 0.49: SS +0.501)   cover  68%
+   + 24 h   RMSE  5.80 dam   persistence  6.27   SS +0.143   (scaled by 0.59: SS +0.500)   cover  66%
+   The scaling is a MEASUREMENT, not a correction: it is deliberately not applied in fb_boxfcst.
+GFS archive: 2025111512 f000 +13 record(s).
+GFS archive: 2025111512 f003 +10 record(s).
+GFS archive: 2025111512 f006 +2 record(s).
+GFS archive: 2025111518 f000 +2 record(s).
+GFS archive: 2025111600 f000 +2 record(s).
+GFS archive: 2025111612 f000 +2 record(s).
+BOXOLOGY ON REAL DATA — GFS 2025-11-15 12Z, conus window
+
+1. FIDELITY — does reading it off two contour families measure the advection?
+   boxology advection rms 7.90 K/day, on 74% of the window
+     vs model layer-mean (1000-500) advection  corr +0.950   slope +0.839   rms 7.00
+     vs model 1000 mb advection                corr +0.686   slope +0.292   rms 3.42
+     vs model 850 mb advection                 corr +0.919   slope +1.015   rms 8.74
+     vs model 700 mb advection                 corr +0.891   slope +0.957   rms 8.49
+     vs model 500 mb advection                 corr +0.901   slope +1.091   rms 9.59
+   advecting wind, rms m/s:
+     boxology V0 (geostrophic 1000)           10.83
+     model layer-mean (1000-500)              12.19
+     model 1000 mb                             5.74
+     model 850 mb                             11.04
+     model 700 mb                             14.51
+     model 500 mb                             22.66
+
+2. ATTRIBUTION — is that advection the local tendency? (centered 6h)
+   smoothing    boxology vs tendency   true adv vs tendency   boxology vs true adv
+     42 km     corr +0.645 slope +0.563   corr +0.711 slope +0.724   corr +0.959 slope +0.821
+     83 km     corr +0.654 slope +0.573   corr +0.720 slope +0.745   corr +0.965 slope +0.816
+    166 km     corr +0.655 slope +0.564   corr +0.711 slope +0.741   corr +0.962 slope +0.795
+    333 km     corr +0.629 slope +0.507   corr +0.659 slope +0.674   corr +0.954 slope +0.753
+   => advection over-predicts the tendency 1.8x; about 44% of it is canceled
+
+3. CONSEQUENCE — the kinematic forecast against persistence
+   +  6 h   RMSE  4.03 dam   persistence  3.82   SS -0.113   (scaled by 0.46: SS +0.218)   cover  69%
+   + 12 h   RMSE  8.80 dam   persistence  7.27   SS -0.467   (scaled by 0.31: SS +0.099)   cover  64%
+   + 24 h   RMSE 16.87 dam   persistence 12.32   SS -0.876   (scaled by 0.14: SS +0.039)   cover  59%
+   The scaling is a MEASUREMENT, not a correction: it is deliberately not applied in fb_boxfcst.
+GFS archive: 2025121500 f000 +13 record(s).
+GFS archive: 2025121500 f003 +10 record(s).
+GFS archive: 2025121500 f006 +2 record(s).
+GFS archive: 2025121506 f000 +2 record(s).
+GFS archive: 2025121512 f000 +2 record(s).
+GFS archive: 2025121600 f000 +2 record(s).
+BOXOLOGY ON REAL DATA — GFS 2025-12-15 00Z, conus window
+
+1. FIDELITY — does reading it off two contour families measure the advection?
+   boxology advection rms 16.96 K/day, on 72% of the window
+     vs model layer-mean (1000-500) advection  corr +0.966   slope +0.773   rms 13.70
+     vs model 1000 mb advection                corr +0.885   slope +0.766   rms 15.56
+     vs model 850 mb advection                 corr +0.949   slope +0.934   rms 16.79
+     vs model 700 mb advection                 corr +0.887   slope +0.712   rms 13.58
+     vs model 500 mb advection                 corr +0.834   slope +0.678   rms 13.70
+   advecting wind, rms m/s:
+     boxology V0 (geostrophic 1000)           13.44
+     model layer-mean (1000-500)              13.20
+     model 1000 mb                             8.74
+     model 850 mb                             11.97
+     model 700 mb                             16.48
+     model 500 mb                             25.53
+
+2. ATTRIBUTION — is that advection the local tendency? (centered 6h)
+   smoothing    boxology vs tendency   true adv vs tendency   boxology vs true adv
+     42 km     corr +0.671 slope +0.376   corr +0.657 slope +0.487   corr +0.961 slope +0.725
+     83 km     corr +0.677 slope +0.379   corr +0.657 slope +0.490   corr +0.965 slope +0.724
+    166 km     corr +0.687 slope +0.377   corr +0.639 slope +0.472   corr +0.957 slope +0.712
+    333 km     corr +0.697 slope +0.350   corr +0.582 slope +0.405   corr +0.930 slope +0.673
+   => advection over-predicts the tendency 2.7x; about 62% of it is canceled
+
+3. CONSEQUENCE — the kinematic forecast against persistence
+   +  6 h   RMSE  6.71 dam   persistence  5.09   SS -0.735   (scaled by 0.37: SS +0.307)   cover  65%
+   + 12 h   RMSE 12.99 dam   persistence  7.48   SS -2.019   (scaled by 0.23: SS +0.137)   cover  59%
+   + 24 h   RMSE 21.24 dam   persistence 10.92   SS -2.785   (scaled by 0.24: SS +0.075)   cover  48%
+   The scaling is a MEASUREMENT, not a correction: it is deliberately not applied in fb_boxfcst.
+GFS archive: 2026011512 f000 +13 record(s).
+GFS archive: 2026011512 f003 +10 record(s).
+GFS archive: 2026011512 f006 +2 record(s).
+GFS archive: 2026011518 f000 +2 record(s).
+GFS archive: 2026011600 f000 +2 record(s).
+GFS archive: 2026011612 f000 +2 record(s).
+BOXOLOGY ON REAL DATA — GFS 2026-01-15 12Z, conus window
+
+1. FIDELITY — does reading it off two contour families measure the advection?
+   boxology advection rms 13.05 K/day, on 73% of the window
+     vs model layer-mean (1000-500) advection  corr +0.942   slope +0.697   rms 9.72
+     vs model 1000 mb advection                corr +0.740   slope +0.433   rms 8.11
+     vs model 850 mb advection                 corr +0.903   slope +0.823   rms 11.99
+     vs model 700 mb advection                 corr +0.858   slope +0.743   rms 11.29
+     vs model 500 mb advection                 corr +0.813   slope +0.788   rms 12.31
+   advecting wind, rms m/s:
+     boxology V0 (geostrophic 1000)           13.59
+     model layer-mean (1000-500)              16.03
+     model 1000 mb                             7.44
+     model 850 mb                             13.29
+     model 700 mb                             19.24
+     model 500 mb                             29.72
+
+2. ATTRIBUTION — is that advection the local tendency? (centered 6h)
+   smoothing    boxology vs tendency   true adv vs tendency   boxology vs true adv
+     42 km     corr +0.601 slope +0.463   corr +0.608 slope +0.649   corr +0.936 slope +0.675
+     83 km     corr +0.608 slope +0.470   corr +0.610 slope +0.664   corr +0.946 slope +0.672
+    166 km     corr +0.610 slope +0.460   corr +0.577 slope +0.630   corr +0.941 slope +0.650
+    333 km     corr +0.580 slope +0.395   corr +0.454 slope +0.479   corr +0.891 slope +0.577
+   => advection over-predicts the tendency 2.2x; about 54% of it is canceled
+
+3. CONSEQUENCE — the kinematic forecast against persistence
+   +  6 h   RMSE  6.17 dam   persistence  5.01   SS -0.515   (scaled by 0.38: SS +0.187)   cover  65%
+   + 12 h   RMSE 11.57 dam   persistence  8.69   SS -0.771   (scaled by 0.33: SS +0.131)   cover  57%
+   + 24 h   RMSE 18.43 dam   persistence 13.10   SS -0.978   (scaled by 0.28: SS +0.087)   cover  45%
+   The scaling is a MEASUREMENT, not a correction: it is deliberately not applied in fb_boxfcst.
+GFS archive: 2026021500 f000 +13 record(s).
+GFS archive: 2026021500 f003 +10 record(s).
+GFS archive: 2026021500 f006 +2 record(s).
+GFS archive: 2026021506 f000 +2 record(s).
+GFS archive: 2026021512 f000 +2 record(s).
+GFS archive: 2026021600 f000 +2 record(s).
+BOXOLOGY ON REAL DATA — GFS 2026-02-15 00Z, conus window
+
+1. FIDELITY — does reading it off two contour families measure the advection?
+   boxology advection rms 5.47 K/day, on 74% of the window
+     vs model layer-mean (1000-500) advection  corr +0.778   slope +0.630   rms 4.38
+     vs model 1000 mb advection                corr +0.457   slope +0.282   rms 3.23
+     vs model 850 mb advection                 corr +0.695   slope +0.664   rms 5.17
+     vs model 700 mb advection                 corr +0.642   slope +0.643   rms 5.41
+     vs model 500 mb advection                 corr +0.717   slope +0.930   rms 6.96
+   advecting wind, rms m/s:
+     boxology V0 (geostrophic 1000)            8.20
+     model layer-mean (1000-500)              11.29
+     model 1000 mb                             5.52
+     model 850 mb                              9.25
+     model 700 mb                             13.58
+     model 500 mb                             22.90
+
+2. ATTRIBUTION — is that advection the local tendency? (centered 6h)
+   smoothing    boxology vs tendency   true adv vs tendency   boxology vs true adv
+     42 km     corr +0.242 slope +0.153   corr +0.151 slope +0.126   corr +0.814 slope +0.616
+     83 km     corr +0.220 slope +0.140   corr +0.122 slope +0.105   corr +0.817 slope +0.607
+    166 km     corr +0.165 slope +0.102   corr +0.058 slope +0.047   corr +0.792 slope +0.603
+    333 km     corr +0.121 slope +0.066   corr +0.007 slope +0.005   corr +0.779 slope +0.623
+   => advection over-predicts the tendency 6.5x; about 85% of it is canceled
+
+3. CONSEQUENCE — the kinematic forecast against persistence
+   +  6 h   RMSE  3.04 dam   persistence  1.86   SS -1.680   (scaled by 0.08: SS +0.007)   cover  69%
+   + 12 h   RMSE  5.73 dam   persistence  3.17   SS -2.257   (scaled by -0.01: SS +0.000)   cover  66%
+   + 24 h   RMSE  9.12 dam   persistence  4.85   SS -2.535   (scaled by -0.07: SS -0.024)   cover  60%
+   The scaling is a MEASUREMENT, not a correction: it is deliberately not applied in fb_boxfcst.
+GFS archive: 2026031512 f000 +13 record(s).
+GFS archive: 2026031512 f003 +10 record(s).
+GFS archive: 2026031512 f006 +2 record(s).
+GFS archive: 2026031518 f000 +2 record(s).
+GFS archive: 2026031600 f000 +2 record(s).
+GFS archive: 2026031612 f000 +2 record(s).
+BOXOLOGY ON REAL DATA — GFS 2026-03-15 12Z, conus window
+
+1. FIDELITY — does reading it off two contour families measure the advection?
+   boxology advection rms 10.75 K/day, on 69% of the window
+     vs model layer-mean (1000-500) advection  corr +0.942   slope +0.910   rms 10.05
+     vs model 1000 mb advection                corr +0.620   slope +0.383   rms 6.60
+     vs model 850 mb advection                 corr +0.874   slope +1.106   rms 13.10
+     vs model 700 mb advection                 corr +0.891   slope +1.069   rms 12.52
+     vs model 500 mb advection                 corr +0.869   slope +1.081   rms 13.51
+   advecting wind, rms m/s:
+     boxology V0 (geostrophic 1000)           15.79
+     model layer-mean (1000-500)              10.99
+     model 1000 mb                             7.36
+     model 850 mb                             13.19
+     model 700 mb                             13.55
+     model 500 mb                             21.78
+
+2. ATTRIBUTION — is that advection the local tendency? (centered 6h)
+   smoothing    boxology vs tendency   true adv vs tendency   boxology vs true adv
+     42 km     corr +0.759 slope +0.651   corr +0.785 slope +0.749   corr +0.960 slope +0.863
+     83 km     corr +0.762 slope +0.655   corr +0.788 slope +0.756   corr +0.964 slope +0.865
+    166 km     corr +0.750 slope +0.617   corr +0.773 slope +0.735   corr +0.954 slope +0.825
+    333 km     corr +0.727 slope +0.498   corr +0.709 slope +0.630   corr +0.944 slope +0.728
+   => advection over-predicts the tendency 1.5x; about 35% of it is canceled
+
+3. CONSEQUENCE — the kinematic forecast against persistence
+   +  6 h   RMSE  4.67 dam   persistence  4.23   SS -0.222   (scaled by 0.34: SS +0.170)   cover  60%
+   + 12 h   RMSE  9.26 dam   persistence  6.74   SS -0.886   (scaled by -0.06: SS -0.029)   cover  54%
+   + 24 h   RMSE 18.21 dam   persistence 14.06   SS -0.677   (scaled by -0.15: SS -0.031)   cover  46%
+   The scaling is a MEASUREMENT, not a correction: it is deliberately not applied in fb_boxfcst.
+BOXOLOGY ON REAL DATA — GFS 2026-04-15 00Z, conus window
+
+1. FIDELITY — does reading it off two contour families measure the advection?
+   boxology advection rms 4.58 K/day, on 71% of the window
+     vs model layer-mean (1000-500) advection  corr +0.864   slope +0.752   rms 3.86
+     vs model 1000 mb advection                corr +0.535   slope +0.337   rms 2.81
+     vs model 850 mb advection                 corr +0.756   slope +0.762   rms 4.52
+     vs model 700 mb advection                 corr +0.750   slope +0.865   rms 5.16
+     vs model 500 mb advection                 corr +0.816   slope +1.042   rms 5.70
+   advecting wind, rms m/s:
+     boxology V0 (geostrophic 1000)           11.11
+     model layer-mean (1000-500)               9.85
+     model 1000 mb                             6.99
+     model 850 mb                              9.82
+     model 700 mb                             11.95
+     model 500 mb                             16.88
+
+2. ATTRIBUTION — is that advection the local tendency? (centered 6h)
+   smoothing    boxology vs tendency   true adv vs tendency   boxology vs true adv
+     42 km     corr +0.162 slope +0.106   corr +0.157 slope +0.124   corr +0.890 slope +0.735
+     83 km     corr +0.162 slope +0.107   corr +0.160 slope +0.137   corr +0.911 slope +0.703
+    166 km     corr +0.140 slope +0.089   corr +0.137 slope +0.123   corr +0.875 slope +0.623
+    333 km     corr +0.080 slope +0.045   corr +0.048 slope +0.042   corr +0.819 slope +0.523
+   => advection over-predicts the tendency 9.5x; about 89% of it is canceled
+
+3. CONSEQUENCE — the kinematic forecast against persistence
+   +  6 h   RMSE  2.25 dam   persistence  1.24   SS -2.290   (scaled by 0.04: SS +0.002)   cover  63%
+   + 12 h   RMSE  3.86 dam   persistence  1.88   SS -3.192   (scaled by 0.06: SS -0.000)   cover  57%
+   + 24 h   RMSE  5.63 dam   persistence  3.35   SS -1.832   (scaled by 0.12: SS +0.100)   cover  45%
+   The scaling is a MEASUREMENT, not a correction: it is deliberately not applied in fb_boxfcst.
+GFS archive: 2026051512 f000 +13 record(s).
+GFS archive: 2026051512 f003 +10 record(s).
+GFS archive: 2026051512 f006 +2 record(s).
+GFS archive: 2026051518 f000 +2 record(s).
+GFS archive: 2026051600 f000 +2 record(s).
+GFS archive: 2026051612 f000 +2 record(s).
+BOXOLOGY ON REAL DATA — GFS 2026-05-15 12Z, conus window
+
+1. FIDELITY — does reading it off two contour families measure the advection?
+   boxology advection rms 5.46 K/day, on 73% of the window
+     vs model layer-mean (1000-500) advection  corr +0.933   slope +0.706   rms 4.15
+     vs model 1000 mb advection                corr +0.747   slope +0.453   rms 3.42
+     vs model 850 mb advection                 corr +0.836   slope +0.714   rms 4.66
+     vs model 700 mb advection                 corr +0.800   slope +0.662   rms 4.53
+     vs model 500 mb advection                 corr +0.879   slope +0.996   rms 6.19
+   advecting wind, rms m/s:
+     boxology V0 (geostrophic 1000)           11.30
+     model layer-mean (1000-500)              10.86
+     model 1000 mb                             6.37
+     model 850 mb                             10.96
+     model 700 mb                             13.20
+     model 500 mb                             17.88
+
+2. ATTRIBUTION — is that advection the local tendency? (centered 6h)
+   smoothing    boxology vs tendency   true adv vs tendency   boxology vs true adv
+     42 km     corr +0.359 slope +0.297   corr +0.382 slope +0.426   corr +0.939 slope +0.698
+     83 km     corr +0.371 slope +0.312   corr +0.395 slope +0.457   corr +0.945 slope +0.686
+    166 km     corr +0.373 slope +0.302   corr +0.383 slope +0.438   corr +0.937 slope +0.663
+    333 km     corr +0.363 slope +0.245   corr +0.321 slope +0.316   corr +0.924 slope +0.635
+   => advection over-predicts the tendency 3.4x; about 70% of it is canceled
+
+3. CONSEQUENCE — the kinematic forecast against persistence
+   +  6 h   RMSE  3.17 dam   persistence  2.67   SS -0.414   (scaled by 0.29: SS +0.071)   cover  68%
+   + 12 h   RMSE  5.48 dam   persistence  4.53   SS -0.464   (scaled by 0.28: SS +0.087)   cover  64%
+   + 24 h   RMSE  8.48 dam   persistence  6.20   SS -0.866   (scaled by 0.22: SS +0.092)   cover  56%
+   The scaling is a MEASUREMENT, not a correction: it is deliberately not applied in fb_boxfcst.
+GFS archive: 2026061500 f000 +13 record(s).
+GFS archive: 2026061500 f003 +10 record(s).
+GFS archive: 2026061500 f006 +2 record(s).
+GFS archive: 2026061506 f000 +2 record(s).
+GFS archive: 2026061512 f000 +2 record(s).
+GFS archive: 2026061600 f000 +2 record(s).
+BOXOLOGY ON REAL DATA — GFS 2026-06-15 00Z, conus window
+
+1. FIDELITY — does reading it off two contour families measure the advection?
+   boxology advection rms 4.31 K/day, on 73% of the window
+     vs model layer-mean (1000-500) advection  corr +0.918   slope +0.773   rms 3.69
+     vs model 1000 mb advection                corr +0.706   slope +0.378   rms 2.41
+     vs model 850 mb advection                 corr +0.883   slope +0.935   rms 4.67
+     vs model 700 mb advection                 corr +0.839   slope +0.884   rms 4.58
+     vs model 500 mb advection                 corr +0.822   slope +0.894   rms 4.70
+   advecting wind, rms m/s:
+     boxology V0 (geostrophic 1000)            9.26
+     model layer-mean (1000-500)               8.92
+     model 1000 mb                             6.02
+     model 850 mb                              9.05
+     model 700 mb                             10.99
+     model 500 mb                             14.58
+
+2. ATTRIBUTION — is that advection the local tendency? (centered 6h)
+   smoothing    boxology vs tendency   true adv vs tendency   boxology vs true adv
+     42 km     corr +0.611 slope +0.387   corr +0.618 slope +0.480   corr +0.927 slope +0.755
+     83 km     corr +0.630 slope +0.396   corr +0.650 slope +0.518   corr +0.938 slope +0.740
+    166 km     corr +0.633 slope +0.379   corr +0.656 slope +0.515   corr +0.923 slope +0.703
+    333 km     corr +0.610 slope +0.335   corr +0.625 slope +0.452   corr +0.889 slope +0.675
+   => advection over-predicts the tendency 2.6x; about 61% of it is canceled
+
+3. CONSEQUENCE — the kinematic forecast against persistence
+   +  6 h   RMSE  1.89 dam   persistence  1.89   SS +0.000   (scaled by 0.43: SS +0.293)   cover  68%
+   + 12 h   RMSE  3.29 dam   persistence  3.35   SS +0.035   (scaled by 0.42: SS +0.342)   cover  64%
+   + 24 h   RMSE  5.22 dam   persistence  3.66   SS -1.036   (scaled by 0.30: SS +0.371)   cover  59%
+   The scaling is a MEASUREMENT, not a correction: it is deliberately not applied in fb_boxfcst.
+GFS archive: 2026071512 f000 +13 record(s).
+GFS archive: 2026071512 f003 +10 record(s).
+GFS archive: 2026071512 f006 +2 record(s).
+GFS archive: 2026071518 f000 +2 record(s).
+GFS archive: 2026071600 f000 +2 record(s).
+GFS archive: 2026071612 f000 +2 record(s).
+BOXOLOGY ON REAL DATA — GFS 2026-07-15 12Z, conus window
+
+1. FIDELITY — does reading it off two contour families measure the advection?
+   boxology advection rms 3.98 K/day, on 74% of the window
+     vs model layer-mean (1000-500) advection  corr +0.945   slope +0.778   rms 3.25
+     vs model 1000 mb advection                corr +0.360   slope +0.156   rms 1.70
+     vs model 850 mb advection                 corr +0.880   slope +0.871   rms 3.94
+     vs model 700 mb advection                 corr +0.896   slope +0.960   rms 4.21
+     vs model 500 mb advection                 corr +0.863   slope +1.125   rms 5.07
+   advecting wind, rms m/s:
+     boxology V0 (geostrophic 1000)            8.27
+     model layer-mean (1000-500)               9.09
+     model 1000 mb                             5.20
+     model 850 mb                              8.91
+     model 700 mb                             11.65
+     model 500 mb                             15.71
+
+2. ATTRIBUTION — is that advection the local tendency? (centered 6h)
+   smoothing    boxology vs tendency   true adv vs tendency   boxology vs true adv
+     42 km     corr +0.521 slope +0.324   corr +0.455 slope +0.349   corr +0.958 slope +0.778
+     83 km     corr +0.539 slope +0.332   corr +0.485 slope +0.386   corr +0.969 slope +0.750
+    166 km     corr +0.557 slope +0.317   corr +0.508 slope +0.396   corr +0.950 slope +0.695
+    333 km     corr +0.629 slope +0.308   corr +0.584 slope +0.418   corr +0.921 slope +0.629
+   => advection over-predicts the tendency 3.1x; about 68% of it is canceled
+
+3. CONSEQUENCE — the kinematic forecast against persistence
+   +  6 h   RMSE  1.95 dam   persistence  1.42   SS -0.893   (scaled by 0.40: SS +0.076)   cover  70%
+   + 12 h   RMSE  3.23 dam   persistence  2.35   SS -0.883   (scaled by 0.47: SS +0.143)   cover  68%
+   + 24 h   RMSE  3.88 dam   persistence  3.64   SS -0.141   (scaled by 0.47: SS +0.696)   cover  63%
+   The scaling is a MEASUREMENT, not a correction: it is deliberately not applied in fb_boxfcst.
+GFS archive: 2026081500 f000 +13 record(s).
+GFS archive: 2026081500 f003 +10 record(s).
+GFS archive: 2026081500 f006 +2 record(s).
+GFS archive: 2026081506 f000 +2 record(s).
+GFS archive: 2026081512 f000 +2 record(s).
+GFS archive: 2026081600 f000 +2 record(s).
+BOXOLOGY ON REAL DATA — GFS 2026-08-15 00Z, conus window
+
+1. FIDELITY — does reading it off two contour families measure the advection?
+   boxology advection rms 2.41 K/day, on 73% of the window
+     vs model layer-mean (1000-500) advection  corr +0.812   slope +0.704   rms 2.09
+     vs model 1000 mb advection                corr +0.431   slope +0.318   rms 1.94
+     vs model 850 mb advection                 corr +0.661   slope +0.798   rms 2.91
+     vs model 700 mb advection                 corr +0.644   slope +0.784   rms 2.94
+     vs model 500 mb advection                 corr +0.763   slope +0.917   rms 2.90
+   advecting wind, rms m/s:
+     boxology V0 (geostrophic 1000)            8.24
+     model layer-mean (1000-500)               6.31
+     model 1000 mb                             4.97
+     model 850 mb                              6.53
+     model 700 mb                              7.95
+     model 500 mb                             11.73
+
+2. ATTRIBUTION — is that advection the local tendency? (centered 6h)
+   smoothing    boxology vs tendency   true adv vs tendency   boxology vs true adv
+     42 km     corr +0.182 slope +0.182   corr +0.262 slope +0.304   corr +0.847 slope +0.727
+     83 km     corr +0.174 slope +0.170   corr +0.245 slope +0.299   corr +0.882 slope +0.704
+    166 km     corr +0.138 slope +0.118   corr +0.178 slope +0.213   corr +0.824 slope +0.593
+    333 km     corr +0.102 slope +0.069   corr +0.078 slope +0.081   corr +0.766 slope +0.501
+   => advection over-predicts the tendency 5.5x; about 82% of it is canceled
+
+3. CONSEQUENCE — the kinematic forecast against persistence
+   +  6 h   RMSE  1.54 dam   persistence  1.22   SS -0.583   (scaled by 0.13: SS +0.016)   cover  68%
+   + 12 h   RMSE  2.62 dam   persistence  2.00   SS -0.702   (scaled by 0.13: SS +0.023)   cover  64%
+   + 24 h   RMSE  4.77 dam   persistence  2.38   SS -3.020   (scaled by -0.15: SS +0.064)   cover  60%
+   The scaling is a MEASUREMENT, not a correction: it is deliberately not applied in fb_boxfcst.
+GFS archive: 2026091512 f000 +13 record(s).
+GFS archive: 2026091512 f003 +10 record(s).
+GFS archive: 2026091512 f006 +2 record(s).
+GFS archive: 2026091518 f000 +2 record(s).
+GFS archive: 2026091600 f000 +2 record(s).
+GFS archive: 2026091612 f000 +2 record(s).
+BOXOLOGY ON REAL DATA — GFS 2026-09-15 12Z, conus window
+
+1. FIDELITY — does reading it off two contour families measure the advection?
+   boxology advection rms 6.51 K/day, on 73% of the window
+     vs model layer-mean (1000-500) advection  corr +0.971   slope +0.781   rms 5.26
+     vs model 1000 mb advection                corr +0.736   slope +0.337   rms 3.09
+     vs model 850 mb advection                 corr +0.928   slope +0.959   rms 6.76
+     vs model 700 mb advection                 corr +0.938   slope +0.873   rms 6.05
+     vs model 500 mb advection                 corr +0.929   slope +0.954   rms 6.68
+   advecting wind, rms m/s:
+     boxology V0 (geostrophic 1000)           11.00
+     model layer-mean (1000-500)              10.04
+     model 1000 mb                             5.85
+     model 850 mb                             11.27
+     model 700 mb                             11.79
+     model 500 mb                             16.04
+
+2. ATTRIBUTION — is that advection the local tendency? (centered 6h)
+   smoothing    boxology vs tendency   true adv vs tendency   boxology vs true adv
+     42 km     corr +0.522 slope +0.321   corr +0.490 slope +0.378   corr +0.972 slope +0.775
+     83 km     corr +0.537 slope +0.332   corr +0.506 slope +0.397   corr +0.974 slope +0.767
+    166 km     corr +0.549 slope +0.327   corr +0.512 slope +0.394   corr +0.968 slope +0.750
+    333 km     corr +0.571 slope +0.301   corr +0.515 slope +0.358   corr +0.958 slope +0.726
+   => advection over-predicts the tendency 3.1x; about 68% of it is canceled
+
+3. CONSEQUENCE — the kinematic forecast against persistence
+   +  6 h   RMSE  2.93 dam   persistence  2.08   SS -0.980   (scaled by 0.32: SS +0.156)   cover  68%
+   + 12 h   RMSE  5.82 dam   persistence  3.21   SS -2.289   (scaled by 0.21: SS +0.046)   cover  64%
+   + 24 h   RMSE  9.92 dam   persistence  3.79   SS -5.865   (scaled by 0.07: SS +0.034)   cover  60%
+   The scaling is a MEASUREMENT, not a correction: it is deliberately not applied in fb_boxfcst.
+BOXOLOGY ON REAL DATA — GFS 2025-10-15 00Z, europe window
+
+1. FIDELITY — does reading it off two contour families measure the advection?
+   boxology advection rms 2.30 K/day, on 92% of the window
+     vs model layer-mean (1000-500) advection  corr +0.954   slope +0.856   rms 2.07
+     vs model 1000 mb advection                corr +0.807   slope +0.658   rms 1.86
+     vs model 850 mb advection                 corr +0.888   slope +0.959   rms 2.50
+     vs model 700 mb advection                 corr +0.904   slope +0.915   rms 2.37
+     vs model 500 mb advection                 corr +0.896   slope +0.892   rms 2.29
+   advecting wind, rms m/s:
+     boxology V0 (geostrophic 1000)            6.63
+     model layer-mean (1000-500)               7.70
+     model 1000 mb                             5.62
+     model 850 mb                              6.93
+     model 700 mb                              8.82
+     model 500 mb                             13.25
+
+2. ATTRIBUTION — is that advection the local tendency? (centered 6h)
+   smoothing    boxology vs tendency   true adv vs tendency   boxology vs true adv
+     42 km     corr +0.773 slope +0.625   corr +0.771 slope +0.671   corr +0.957 slope +0.890
+     83 km     corr +0.793 slope +0.633   corr +0.793 slope +0.696   corr +0.966 slope +0.879
+    166 km     corr +0.809 slope +0.610   corr +0.812 slope +0.702   corr +0.951 slope +0.829
+    333 km     corr +0.800 slope +0.537   corr +0.797 slope +0.659   corr +0.916 slope +0.744
+   => advection over-predicts the tendency 1.6x; about 37% of it is canceled
+
+3. CONSEQUENCE — the kinematic forecast against persistence
+   +  6 h   RMSE  0.85 dam   persistence  1.03   SS +0.311   (scaled by 0.68: SS +0.477)   cover  86%
+   + 12 h   RMSE  1.50 dam   persistence  1.98   SS +0.427   (scaled by 0.66: SS +0.555)   cover  80%
+   + 24 h   RMSE  2.71 dam   persistence  3.54   SS +0.417   (scaled by 0.67: SS +0.552)   cover  73%
+   The scaling is a MEASUREMENT, not a correction: it is deliberately not applied in fb_boxfcst.
+BOXOLOGY ON REAL DATA — GFS 2025-11-15 12Z, europe window
+
+1. FIDELITY — does reading it off two contour families measure the advection?
+   boxology advection rms 4.58 K/day, on 89% of the window
+     vs model layer-mean (1000-500) advection  corr +0.961   slope +0.865   rms 4.12
+     vs model 1000 mb advection                corr +0.817   slope +0.549   rms 3.07
+     vs model 850 mb advection                 corr +0.915   slope +0.996   rms 4.98
+     vs model 700 mb advection                 corr +0.894   slope +0.958   rms 4.91
+     vs model 500 mb advection                 corr +0.918   slope +0.957   rms 4.77
+   advecting wind, rms m/s:
+     boxology V0 (geostrophic 1000)            9.81
+     model layer-mean (1000-500)              10.52
+     model 1000 mb                             6.95
+     model 850 mb                              9.69
+     model 700 mb                             12.65
+     model 500 mb                             17.76
+
+2. ATTRIBUTION — is that advection the local tendency? (centered 6h)
+   smoothing    boxology vs tendency   true adv vs tendency   boxology vs true adv
+     42 km     corr +0.580 slope +0.487   corr +0.569 slope +0.529   corr +0.946 slope +0.852
+     83 km     corr +0.592 slope +0.515   corr +0.582 slope +0.576   corr +0.954 slope +0.837
+    166 km     corr +0.602 slope +0.533   corr +0.575 slope +0.601   corr +0.936 slope +0.794
+    333 km     corr +0.600 slope +0.491   corr +0.516 slope +0.531   corr +0.896 slope +0.712
+   => advection over-predicts the tendency 2.1x; about 51% of it is canceled
+
+3. CONSEQUENCE — the kinematic forecast against persistence
+   +  6 h   RMSE  1.92 dam   persistence  1.73   SS -0.238   (scaled by 0.42: SS +0.267)   cover  80%
+   + 12 h   RMSE  3.85 dam   persistence  2.70   SS -1.035   (scaled by 0.26: SS +0.142)   cover  73%
+   + 24 h   RMSE  8.25 dam   persistence  4.79   SS -1.965   (scaled by 0.01: SS +0.001)   cover  58%
+   The scaling is a MEASUREMENT, not a correction: it is deliberately not applied in fb_boxfcst.
+BOXOLOGY ON REAL DATA — GFS 2025-12-15 00Z, europe window
+
+1. FIDELITY — does reading it off two contour families measure the advection?
+   boxology advection rms 7.76 K/day, on 89% of the window
+     vs model layer-mean (1000-500) advection  corr +0.982   slope +0.880   rms 6.94
+     vs model 1000 mb advection                corr +0.829   slope +0.504   rms 4.70
+     vs model 850 mb advection                 corr +0.957   slope +1.035   rms 8.36
+     vs model 700 mb advection                 corr +0.947   slope +0.942   rms 7.71
+     vs model 500 mb advection                 corr +0.923   slope +1.039   rms 8.78
+   advecting wind, rms m/s:
+     boxology V0 (geostrophic 1000)           12.26
+     model layer-mean (1000-500)              12.82
+     model 1000 mb                             8.29
+     model 850 mb                             12.47
+     model 700 mb                             14.30
+     model 500 mb                             21.58
+
+2. ATTRIBUTION — is that advection the local tendency? (centered 6h)
+   smoothing    boxology vs tendency   true adv vs tendency   boxology vs true adv
+     42 km     corr +0.734 slope +0.671   corr +0.754 slope +0.745   corr +0.975 slope +0.902
+     83 km     corr +0.755 slope +0.712   corr +0.781 slope +0.805   corr +0.979 slope +0.896
+    166 km     corr +0.769 slope +0.747   corr +0.797 slope +0.859   corr +0.977 slope +0.880
+    333 km     corr +0.781 slope +0.779   corr +0.795 slope +0.884   corr +0.972 slope +0.872
+   => advection over-predicts the tendency 1.5x; about 33% of it is canceled
+
+3. CONSEQUENCE — the kinematic forecast against persistence
+   +  6 h   RMSE  2.25 dam   persistence  2.97   SS +0.424   (scaled by 0.68: SS +0.572)   cover  80%
+   + 12 h   RMSE  4.03 dam   persistence  5.35   SS +0.433   (scaled by 0.68: SS +0.570)   cover  72%
+   + 24 h   RMSE  6.01 dam   persistence  9.06   SS +0.560   (scaled by 0.71: SS +0.673)   cover  58%
+   The scaling is a MEASUREMENT, not a correction: it is deliberately not applied in fb_boxfcst.
+BOXOLOGY ON REAL DATA — GFS 2026-01-15 12Z, europe window
+
+1. FIDELITY — does reading it off two contour families measure the advection?
+   boxology advection rms 5.71 K/day, on 90% of the window
+     vs model layer-mean (1000-500) advection  corr +0.948   slope +0.758   rms 4.61
+     vs model 1000 mb advection                corr +0.831   slope +0.548   rms 3.74
+     vs model 850 mb advection                 corr +0.900   slope +0.819   rms 5.25
+     vs model 700 mb advection                 corr +0.903   slope +0.823   rms 5.24
+     vs model 500 mb advection                 corr +0.856   slope +0.843   rms 5.73
+   advecting wind, rms m/s:
+     boxology V0 (geostrophic 1000)           10.40
+     model layer-mean (1000-500)              10.94
+     model 1000 mb                             6.77
+     model 850 mb                             10.74
+     model 700 mb                             12.65
+     model 500 mb                             18.04
+
+2. ATTRIBUTION — is that advection the local tendency? (centered 6h)
+   smoothing    boxology vs tendency   true adv vs tendency   boxology vs true adv
+     42 km     corr +0.652 slope +0.464   corr +0.664 slope +0.591   corr +0.956 slope +0.766
+     83 km     corr +0.665 slope +0.482   corr +0.683 slope +0.627   corr +0.961 slope +0.758
+    166 km     corr +0.678 slope +0.494   corr +0.686 slope +0.644   corr +0.954 slope +0.741
+    333 km     corr +0.696 slope +0.489   corr +0.671 slope +0.612   corr +0.927 slope +0.713
+   => advection over-predicts the tendency 2.2x; about 54% of it is canceled
+
+3. CONSEQUENCE — the kinematic forecast against persistence
+   +  6 h   RMSE  2.15 dam   persistence  1.82   SS -0.400   (scaled by 0.41: SS +0.335)   cover  82%
+   + 12 h   RMSE  3.81 dam   persistence  3.09   SS -0.523   (scaled by 0.39: SS +0.347)   cover  76%
+   + 24 h   RMSE  6.27 dam   persistence  5.37   SS -0.365   (scaled by 0.41: SS +0.365)   cover  66%
+   The scaling is a MEASUREMENT, not a correction: it is deliberately not applied in fb_boxfcst.
+BOXOLOGY ON REAL DATA — GFS 2026-02-15 00Z, europe window
+
+1. FIDELITY — does reading it off two contour families measure the advection?
+   boxology advection rms 8.78 K/day, on 84% of the window
+     vs model layer-mean (1000-500) advection  corr +0.961   slope +0.806   rms 7.18
+     vs model 1000 mb advection                corr +0.749   slope +0.424   rms 4.71
+     vs model 850 mb advection                 corr +0.913   slope +0.893   rms 8.24
+     vs model 700 mb advection                 corr +0.914   slope +0.880   rms 8.20
+     vs model 500 mb advection                 corr +0.914   slope +1.026   rms 9.72
+   advecting wind, rms m/s:
+     boxology V0 (geostrophic 1000)           14.09
+     model layer-mean (1000-500)              12.24
+     model 1000 mb                             9.00
+     model 850 mb                             12.68
+     model 700 mb                             14.43
+     model 500 mb                             20.68
+
+2. ATTRIBUTION — is that advection the local tendency? (centered 6h)
+   smoothing    boxology vs tendency   true adv vs tendency   boxology vs true adv
+     42 km     corr +0.563 slope +0.375   corr +0.604 slope +0.461   corr +0.947 slope +0.827
+     83 km     corr +0.594 slope +0.415   corr +0.641 slope +0.526   corr +0.960 slope +0.817
+    166 km     corr +0.586 slope +0.404   corr +0.635 slope +0.542   corr +0.952 slope +0.768
+    333 km     corr +0.518 slope +0.321   corr +0.536 slope +0.442   corr +0.932 slope +0.700
+   => advection over-predicts the tendency 2.7x; about 62% of it is canceled
+
+3. CONSEQUENCE — the kinematic forecast against persistence
+   +  6 h   RMSE  3.17 dam   persistence  2.72   SS -0.355   (scaled by 0.45: SS +0.354)   cover  71%
+   + 12 h   RMSE  6.22 dam   persistence  4.96   SS -0.569   (scaled by 0.35: SS +0.290)   cover  64%
+   + 24 h   RMSE 12.58 dam   persistence  6.52   SS -2.728   (scaled by 0.12: SS +0.050)   cover  58%
+   The scaling is a MEASUREMENT, not a correction: it is deliberately not applied in fb_boxfcst.
+BOXOLOGY ON REAL DATA — GFS 2026-03-15 12Z, europe window
+
+1. FIDELITY — does reading it off two contour families measure the advection?
+   boxology advection rms 8.98 K/day, on 86% of the window
+     vs model layer-mean (1000-500) advection  corr +0.974   slope +0.805   rms 7.48
+     vs model 1000 mb advection                corr +0.859   slope +0.485   rms 5.18
+     vs model 850 mb advection                 corr +0.954   slope +0.898   rms 8.53
+     vs model 700 mb advection                 corr +0.931   slope +0.834   rms 8.08
+     vs model 500 mb advection                 corr +0.930   slope +1.002   rms 9.68
+   advecting wind, rms m/s:
+     boxology V0 (geostrophic 1000)           13.40
+     model layer-mean (1000-500)              12.87
+     model 1000 mb                             9.24
+     model 850 mb                             12.92
+     model 700 mb                             14.42
+     model 500 mb                             19.85
+
+2. ATTRIBUTION — is that advection the local tendency? (centered 6h)
+   smoothing    boxology vs tendency   true adv vs tendency   boxology vs true adv
+     42 km     corr +0.741 slope +0.579   corr +0.723 slope +0.641   corr +0.965 slope +0.850
+     83 km     corr +0.763 slope +0.620   corr +0.745 slope +0.695   corr +0.969 slope +0.843
+    166 km     corr +0.760 slope +0.635   corr +0.730 slope +0.715   corr +0.958 slope +0.817
+    333 km     corr +0.646 slope +0.530   corr +0.569 slope +0.560   corr +0.916 slope +0.764
+   => advection over-predicts the tendency 1.7x; about 42% of it is canceled
+
+3. CONSEQUENCE — the kinematic forecast against persistence
+   +  6 h   RMSE  2.57 dam   persistence  3.12   SS +0.322   (scaled by 0.61: SS +0.571)   cover  77%
+   + 12 h   RMSE  4.84 dam   persistence  4.46   SS -0.179   (scaled by 0.44: SS +0.433)   cover  70%
+   + 24 h   RMSE 10.58 dam   persistence  5.43   SS -2.792   (scaled by -0.01: SS -0.000)   cover  59%
+   The scaling is a MEASUREMENT, not a correction: it is deliberately not applied in fb_boxfcst.
+BOXOLOGY ON REAL DATA — GFS 2026-04-15 00Z, europe window
+
+1. FIDELITY — does reading it off two contour families measure the advection?
+   boxology advection rms 4.34 K/day, on 91% of the window
+     vs model layer-mean (1000-500) advection  corr +0.937   slope +0.766   rms 3.56
+     vs model 1000 mb advection                corr +0.642   slope +0.415   rms 2.71
+     vs model 850 mb advection                 corr +0.898   slope +0.929   rms 4.41
+     vs model 700 mb advection                 corr +0.873   slope +0.846   rms 4.28
+     vs model 500 mb advection                 corr +0.858   slope +0.873   rms 4.41
+   advecting wind, rms m/s:
+     boxology V0 (geostrophic 1000)           10.43
+     model layer-mean (1000-500)               9.34
+     model 1000 mb                             7.81
+     model 850 mb                              9.80
+     model 700 mb                             10.66
+     model 500 mb                             15.07
+
+2. ATTRIBUTION — is that advection the local tendency? (centered 6h)
+   smoothing    boxology vs tendency   true adv vs tendency   boxology vs true adv
+     42 km     corr +0.722 slope +0.712   corr +0.688 slope +0.830   corr +0.940 slope +0.769
+     83 km     corr +0.734 slope +0.734   corr +0.697 slope +0.859   corr +0.947 slope +0.769
+    166 km     corr +0.722 slope +0.718   corr +0.682 slope +0.854   corr +0.932 slope +0.740
+    333 km     corr +0.658 slope +0.614   corr +0.592 slope +0.748   corr +0.896 slope +0.662
+   => advection over-predicts the tendency 1.4x; about 29% of it is canceled
+
+3. CONSEQUENCE — the kinematic forecast against persistence
+   +  6 h   RMSE  1.92 dam   persistence  2.42   SS +0.373   (scaled by 0.79: SS +0.444)   cover  84%
+   + 12 h   RMSE  3.58 dam   persistence  4.39   SS +0.336   (scaled by 0.69: SS +0.445)   cover  79%
+   + 24 h   RMSE  5.89 dam   persistence  5.40   SS -0.192   (scaled by 0.48: SS +0.288)   cover  72%
+   The scaling is a MEASUREMENT, not a correction: it is deliberately not applied in fb_boxfcst.
+BOXOLOGY ON REAL DATA — GFS 2026-05-15 12Z, europe window
+
+1. FIDELITY — does reading it off two contour families measure the advection?
+   boxology advection rms 4.23 K/day, on 88% of the window
+     vs model layer-mean (1000-500) advection  corr +0.906   slope +0.745   rms 3.49
+     vs model 1000 mb advection                corr +0.697   slope +0.527   rms 3.20
+     vs model 850 mb advection                 corr +0.839   slope +0.754   rms 3.83
+     vs model 700 mb advection                 corr +0.802   slope +0.729   rms 3.88
+     vs model 500 mb advection                 corr +0.778   slope +0.968   rms 5.27
+   advecting wind, rms m/s:
+     boxology V0 (geostrophic 1000)            9.39
+     model layer-mean (1000-500)              11.12
+     model 1000 mb                             6.82
+     model 850 mb                              8.95
+     model 700 mb                             12.14
+     model 500 mb                             20.36
+
+2. ATTRIBUTION — is that advection the local tendency? (centered 6h)
+   smoothing    boxology vs tendency   true adv vs tendency   boxology vs true adv
+     42 km     corr +0.334 slope +0.216   corr +0.331 slope +0.249   corr +0.890 slope +0.767
+     83 km     corr +0.317 slope +0.205   corr +0.335 slope +0.271   corr +0.913 slope +0.731
+    166 km     corr +0.282 slope +0.173   corr +0.305 slope +0.247   corr +0.872 slope +0.657
+    333 km     corr +0.255 slope +0.118   corr +0.223 slope +0.145   corr +0.817 slope +0.580
+   => advection over-predicts the tendency 4.6x; about 78% of it is canceled
+
+3. CONSEQUENCE — the kinematic forecast against persistence
+   +  6 h   RMSE  2.11 dam   persistence  1.71   SS -0.538   (scaled by 0.23: SS +0.082)   cover  80%
+   + 12 h   RMSE  3.30 dam   persistence  2.50   SS -0.745   (scaled by 0.26: SS +0.138)   cover  73%
+   + 24 h   RMSE  6.06 dam   persistence  3.95   SS -1.346   (scaled by 0.02: SS +0.005)   cover  64%
+   The scaling is a MEASUREMENT, not a correction: it is deliberately not applied in fb_boxfcst.
+BOXOLOGY ON REAL DATA — GFS 2026-06-15 00Z, europe window
+
+1. FIDELITY — does reading it off two contour families measure the advection?
+   boxology advection rms 3.28 K/day, on 88% of the window
+     vs model layer-mean (1000-500) advection  corr +0.907   slope +0.781   rms 2.81
+     vs model 1000 mb advection                corr +0.517   slope +0.328   rms 2.11
+     vs model 850 mb advection                 corr +0.810   slope +0.885   rms 3.57
+     vs model 700 mb advection                 corr +0.767   slope +0.878   rms 3.72
+     vs model 500 mb advection                 corr +0.852   slope +1.032   rms 3.93
+   advecting wind, rms m/s:
+     boxology V0 (geostrophic 1000)            8.68
+     model layer-mean (1000-500)               8.58
+     model 1000 mb                             6.11
+     model 850 mb                              8.36
+     model 700 mb                             10.44
+     model 500 mb                             14.51
+
+2. ATTRIBUTION — is that advection the local tendency? (centered 6h)
+   smoothing    boxology vs tendency   true adv vs tendency   boxology vs true adv
+     42 km     corr +0.565 slope +0.386   corr +0.529 slope +0.420   corr +0.916 slope +0.787
+     83 km     corr +0.565 slope +0.377   corr +0.544 slope +0.441   corr +0.926 slope +0.761
+    166 km     corr +0.509 slope +0.308   corr +0.487 slope +0.383   corr +0.877 slope +0.675
+    333 km     corr +0.330 slope +0.155   corr +0.242 slope +0.161   corr +0.787 slope +0.553
+   => advection over-predicts the tendency 2.6x; about 61% of it is canceled
+
+3. CONSEQUENCE — the kinematic forecast against persistence
+   +  6 h   RMSE  1.31 dam   persistence  1.37   SS +0.081   (scaled by 0.45: SS +0.341)   cover  80%
+   + 12 h   RMSE  2.80 dam   persistence  2.08   SS -0.810   (scaled by 0.30: SS +0.121)   cover  74%
+   + 24 h   RMSE  5.05 dam   persistence  3.07   SS -1.710   (scaled by 0.16: SS +0.023)   cover  65%
+   The scaling is a MEASUREMENT, not a correction: it is deliberately not applied in fb_boxfcst.
+BOXOLOGY ON REAL DATA — GFS 2026-07-15 12Z, europe window
+
+1. FIDELITY — does reading it off two contour families measure the advection?
+   boxology advection rms 2.09 K/day, on 91% of the window
+     vs model layer-mean (1000-500) advection  corr +0.812   slope +0.722   rms 1.85
+     vs model 1000 mb advection                corr +0.618   slope +0.565   rms 1.94
+     vs model 850 mb advection                 corr +0.636   slope +0.546   rms 1.78
+     vs model 700 mb advection                 corr +0.664   slope +0.717   rms 2.23
+     vs model 500 mb advection                 corr +0.732   slope +1.060   rms 3.00
+   advecting wind, rms m/s:
+     boxology V0 (geostrophic 1000)            6.21
+     model layer-mean (1000-500)               7.62
+     model 1000 mb                             5.01
+     model 850 mb                              6.35
+     model 700 mb                              9.51
+     model 500 mb                             13.65
+
+2. ATTRIBUTION — is that advection the local tendency? (centered 6h)
+   smoothing    boxology vs tendency   true adv vs tendency   boxology vs true adv
+     42 km     corr +0.108 slope +0.077   corr +0.170 slope +0.139   corr +0.807 slope +0.708
+     83 km     corr +0.116 slope +0.079   corr +0.183 slope +0.171   corr +0.881 slope +0.644
+    166 km     corr +0.095 slope +0.055   corr +0.187 slope +0.192   corr +0.745 slope +0.424
+    333 km     corr +0.052 slope +0.026   corr +0.211 slope +0.223   corr +0.507 slope +0.242
+   => advection over-predicts the tendency 12.9x; about 92% of it is canceled
+
+3. CONSEQUENCE — the kinematic forecast against persistence
+   +  6 h   RMSE  1.41 dam   persistence  1.09   SS -0.682   (scaled by 0.19: SS -0.001)   cover  85%
+   + 12 h   RMSE  1.78 dam   persistence  1.26   SS -1.016   (scaled by 0.27: SS +0.182)   cover  81%
+   + 24 h   RMSE  3.72 dam   persistence  2.24   SS -1.754   (scaled by 0.15: SS +0.067)   cover  72%
+   The scaling is a MEASUREMENT, not a correction: it is deliberately not applied in fb_boxfcst.
+BOXOLOGY ON REAL DATA — GFS 2026-08-15 00Z, europe window
+
+1. FIDELITY — does reading it off two contour families measure the advection?
+   boxology advection rms 2.90 K/day, on 88% of the window
+     vs model layer-mean (1000-500) advection  corr +0.910   slope +0.794   rms 2.55
+     vs model 1000 mb advection                corr +0.796   slope +0.737   rms 2.85
+     vs model 850 mb advection                 corr +0.787   slope +0.771   rms 2.82
+     vs model 700 mb advection                 corr +0.801   slope +0.746   rms 2.67
+     vs model 500 mb advection                 corr +0.902   slope +0.921   rms 2.95
+   advecting wind, rms m/s:
+     boxology V0 (geostrophic 1000)            7.80
+     model layer-mean (1000-500)               6.42
+     model 1000 mb                             6.19
+     model 850 mb                              6.66
+     model 700 mb                              7.97
+     model 500 mb                             10.15
+
+2. ATTRIBUTION — is that advection the local tendency? (centered 6h)
+   smoothing    boxology vs tendency   true adv vs tendency   boxology vs true adv
+     42 km     corr +0.661 slope +0.519   corr +0.665 slope +0.585   corr +0.920 slope +0.820
+     83 km     corr +0.685 slope +0.544   corr +0.678 slope +0.605   corr +0.949 slope +0.844
+    166 km     corr +0.671 slope +0.505   corr +0.670 slope +0.600   corr +0.932 slope +0.784
+    333 km     corr +0.622 slope +0.434   corr +0.617 slope +0.557   corr +0.902 slope +0.698
+   => advection over-predicts the tendency 1.9x; about 48% of it is canceled
+
+3. CONSEQUENCE — the kinematic forecast against persistence
+   +  6 h   RMSE  1.26 dam   persistence  1.58   SS +0.365   (scaled by 0.63: SS +0.414)   cover  80%
+   + 12 h   RMSE  2.17 dam   persistence  2.61   SS +0.313   (scaled by 0.66: SS +0.445)   cover  75%
+   + 24 h   RMSE  4.70 dam   persistence  4.17   SS -0.270   (scaled by 0.39: SS +0.244)   cover  68%
+   The scaling is a MEASUREMENT, not a correction: it is deliberately not applied in fb_boxfcst.
+BOXOLOGY ON REAL DATA — GFS 2026-09-15 12Z, europe window
+
+1. FIDELITY — does reading it off two contour families measure the advection?
+   boxology advection rms 5.21 K/day, on 90% of the window
+     vs model layer-mean (1000-500) advection  corr +0.969   slope +0.823   rms 4.42
+     vs model 1000 mb advection                corr +0.904   slope +0.755   rms 4.43
+     vs model 850 mb advection                 corr +0.950   slope +0.871   rms 4.76
+     vs model 700 mb advection                 corr +0.926   slope +0.814   rms 4.53
+     vs model 500 mb advection                 corr +0.929   slope +0.852   rms 4.71
+   advecting wind, rms m/s:
+     boxology V0 (geostrophic 1000)            8.49
+     model layer-mean (1000-500)               8.86
+     model 1000 mb                             6.85
+     model 850 mb                              8.08
+     model 700 mb                              9.90
+     model 500 mb                             14.56
+
+2. ATTRIBUTION — is that advection the local tendency? (centered 6h)
+   smoothing    boxology vs tendency   true adv vs tendency   boxology vs true adv
+     42 km     corr +0.773 slope +0.731   corr +0.802 slope +0.857   corr +0.967 slope +0.856
+     83 km     corr +0.783 slope +0.750   corr +0.817 slope +0.897   corr +0.976 slope +0.852
+    166 km     corr +0.774 slope +0.727   corr +0.816 slope +0.908   corr +0.964 slope +0.814
+    333 km     corr +0.726 slope +0.630   corr +0.757 slope +0.824   corr +0.939 slope +0.749
+   => advection over-predicts the tendency 1.4x; about 27% of it is canceled
+
+3. CONSEQUENCE — the kinematic forecast against persistence
+   +  6 h   RMSE  1.56 dam   persistence  2.35   SS +0.561   (scaled by 0.78: SS +0.633)   cover  83%
+   + 12 h   RMSE  3.15 dam   persistence  4.61   SS +0.532   (scaled by 0.73: SS +0.594)   cover  78%
+   + 24 h   RMSE  7.54 dam   persistence  7.97   SS +0.105   (scaled by 0.56: SS +0.312)   cover  72%
+   The scaling is a MEASUREMENT, not a correction: it is deliberately not applied in fb_boxfcst.
+BOXOLOGY ON REAL DATA — GFS 2025-10-15 00Z, sindian window
+
+1. FIDELITY — does reading it off two contour families measure the advection?
+   boxology advection rms 7.02 K/day, on 99% of the window
+     vs model layer-mean (1000-500) advection  corr +0.983   slope +0.898   rms 6.41
+     vs model 1000 mb advection                corr +0.906   slope +0.735   rms 5.79
+     vs model 850 mb advection                 corr +0.969   slope +0.984   rms 7.12
+     vs model 700 mb advection                 corr +0.935   slope +0.911   rms 6.81
+     vs model 500 mb advection                 corr +0.952   slope +0.962   rms 7.05
+   advecting wind, rms m/s:
+     boxology V0 (geostrophic 1000)           12.47
+     model layer-mean (1000-500)              15.54
+     model 1000 mb                            11.03
+     model 850 mb                             13.26
+     model 700 mb                             16.59
+     model 500 mb                             25.71
+
+2. ATTRIBUTION — is that advection the local tendency? (centered 6h)
+   smoothing    boxology vs tendency   true adv vs tendency   boxology vs true adv
+     42 km     corr +0.741 slope +0.606   corr +0.738 slope +0.671   corr +0.982 slope +0.883
+     83 km     corr +0.741 slope +0.606   corr +0.737 slope +0.676   corr +0.983 slope +0.876
+    166 km     corr +0.722 slope +0.583   corr +0.713 slope +0.656   corr +0.979 slope +0.859
+    333 km     corr +0.651 slope +0.497   corr +0.622 slope +0.562   corr +0.968 slope +0.817
+   => advection over-predicts the tendency 1.6x; about 39% of it is canceled
+
+3. CONSEQUENCE — the kinematic forecast against persistence
+   +  6 h   RMSE  2.63 dam   persistence  2.78   SS +0.108   (scaled by 0.56: SS +0.421)   cover  97%
+   + 12 h   RMSE  5.37 dam   persistence  4.91   SS -0.195   (scaled by 0.47: SS +0.285)   cover  96%
+   + 24 h   RMSE 10.18 dam   persistence  7.73   SS -0.738   (scaled by 0.29: SS +0.098)   cover  93%
+   The scaling is a MEASUREMENT, not a correction: it is deliberately not applied in fb_boxfcst.
+BOXOLOGY ON REAL DATA — GFS 2025-11-15 12Z, sindian window
+
+1. FIDELITY — does reading it off two contour families measure the advection?
+   boxology advection rms 10.09 K/day, on 97% of the window
+     vs model layer-mean (1000-500) advection  corr +0.976   slope +0.860   rms 8.90
+     vs model 1000 mb advection                corr +0.864   slope +0.645   rms 7.58
+     vs model 850 mb advection                 corr +0.971   slope +0.972   rms 10.16
+     vs model 700 mb advection                 corr +0.954   slope +0.929   rms 9.84
+     vs model 500 mb advection                 corr +0.885   slope +0.894   rms 10.16
+   advecting wind, rms m/s:
+     boxology V0 (geostrophic 1000)           14.96
+     model layer-mean (1000-500)              17.12
+     model 1000 mb                            11.98
+     model 850 mb                             16.07
+     model 700 mb                             18.98
+     model 500 mb                             25.93
+
+2. ATTRIBUTION — is that advection the local tendency? (centered 6h)
+   smoothing    boxology vs tendency   true adv vs tendency   boxology vs true adv
+     42 km     corr +0.820 slope +0.647   corr +0.808 slope +0.739   corr +0.971 slope +0.838
+     83 km     corr +0.825 slope +0.658   corr +0.815 slope +0.757   corr +0.972 slope +0.834
+    166 km     corr +0.817 slope +0.654   corr +0.797 slope +0.746   corr +0.969 slope +0.830
+    333 km     corr +0.767 slope +0.596   corr +0.719 slope +0.660   corr +0.962 slope +0.814
+   => advection over-predicts the tendency 1.5x; about 35% of it is canceled
+
+3. CONSEQUENCE — the kinematic forecast against persistence
+   +  6 h   RMSE  2.66 dam   persistence  3.83   SS +0.519   (scaled by 0.68: SS +0.652)   cover  96%
+   + 12 h   RMSE  5.58 dam   persistence  6.81   SS +0.330   (scaled by 0.62: SS +0.518)   cover  94%
+   + 24 h   RMSE 11.70 dam   persistence 10.40   SS -0.267   (scaled by 0.40: SS +0.211)   cover  91%
+   The scaling is a MEASUREMENT, not a correction: it is deliberately not applied in fb_boxfcst.
+BOXOLOGY ON REAL DATA — GFS 2025-12-15 00Z, sindian window
+
+1. FIDELITY — does reading it off two contour families measure the advection?
+   boxology advection rms 7.50 K/day, on 98% of the window
+     vs model layer-mean (1000-500) advection  corr +0.976   slope +0.887   rms 6.82
+     vs model 1000 mb advection                corr +0.870   slope +0.735   rms 6.35
+     vs model 850 mb advection                 corr +0.955   slope +0.974   rms 7.66
+     vs model 700 mb advection                 corr +0.927   slope +0.898   rms 7.26
+     vs model 500 mb advection                 corr +0.887   slope +0.940   rms 7.95
+   advecting wind, rms m/s:
+     boxology V0 (geostrophic 1000)           13.43
+     model layer-mean (1000-500)              15.53
+     model 1000 mb                            10.38
+     model 850 mb                             14.02
+     model 700 mb                             17.31
+     model 500 mb                             25.06
+
+2. ATTRIBUTION — is that advection the local tendency? (centered 6h)
+   smoothing    boxology vs tendency   true adv vs tendency   boxology vs true adv
+     42 km     corr +0.682 slope +0.492   corr +0.664 slope +0.543   corr +0.975 slope +0.860
+     83 km     corr +0.685 slope +0.494   corr +0.663 slope +0.547   corr +0.977 slope +0.854
+    166 km     corr +0.675 slope +0.475   corr +0.639 slope +0.524   corr +0.973 slope +0.835
+    333 km     corr +0.618 slope +0.396   corr +0.548 slope +0.431   corr +0.955 slope +0.778
+   => advection over-predicts the tendency 2.0x; about 51% of it is canceled
+
+3. CONSEQUENCE — the kinematic forecast against persistence
+   +  6 h   RMSE  2.77 dam   persistence  2.62   SS -0.118   (scaled by 0.46: SS +0.362)   cover  95%
+   + 12 h   RMSE  5.28 dam   persistence  4.74   SS -0.239   (scaled by 0.42: SS +0.276)   cover  93%
+   + 24 h   RMSE  8.68 dam   persistence  6.96   SS -0.557   (scaled by 0.33: SS +0.197)   cover  90%
+   The scaling is a MEASUREMENT, not a correction: it is deliberately not applied in fb_boxfcst.
+BOXOLOGY ON REAL DATA — GFS 2026-01-15 12Z, sindian window
+
+1. FIDELITY — does reading it off two contour families measure the advection?
+   boxology advection rms 8.87 K/day, on 98% of the window
+     vs model layer-mean (1000-500) advection  corr +0.984   slope +0.926   rms 8.33
+     vs model 1000 mb advection                corr +0.932   slope +0.832   rms 7.91
+     vs model 850 mb advection                 corr +0.969   slope +1.007   rms 9.22
+     vs model 700 mb advection                 corr +0.953   slope +0.953   rms 8.82
+     vs model 500 mb advection                 corr +0.917   slope +0.914   rms 8.78
+   advecting wind, rms m/s:
+     boxology V0 (geostrophic 1000)           12.86
+     model layer-mean (1000-500)              16.77
+     model 1000 mb                            11.01
+     model 850 mb                             14.64
+     model 700 mb                             18.47
+     model 500 mb                             27.05
+
+2. ATTRIBUTION — is that advection the local tendency? (centered 6h)
+   smoothing    boxology vs tendency   true adv vs tendency   boxology vs true adv
+     42 km     corr +0.843 slope +0.698   corr +0.824 slope +0.743   corr +0.981 slope +0.900
+     83 km     corr +0.846 slope +0.703   corr +0.827 slope +0.755   corr +0.981 slope +0.894
+    166 km     corr +0.839 slope +0.697   corr +0.815 slope +0.754   corr +0.979 slope +0.880
+    333 km     corr +0.799 slope +0.651   corr +0.760 slope +0.719   corr +0.970 slope +0.837
+   => advection over-predicts the tendency 1.4x; about 30% of it is canceled
+
+3. CONSEQUENCE — the kinematic forecast against persistence
+   +  6 h   RMSE  2.96 dam   persistence  3.85   SS +0.408   (scaled by 0.67: SS +0.532)   cover  97%
+   + 12 h   RMSE  6.14 dam   persistence  6.90   SS +0.208   (scaled by 0.58: SS +0.403)   cover  95%
+   + 24 h   RMSE 11.70 dam   persistence 10.51   SS -0.240   (scaled by 0.40: SS +0.197)   cover  91%
+   The scaling is a MEASUREMENT, not a correction: it is deliberately not applied in fb_boxfcst.
+BOXOLOGY ON REAL DATA — GFS 2026-02-15 00Z, sindian window
+
+1. FIDELITY — does reading it off two contour families measure the advection?
+   boxology advection rms 8.87 K/day, on 99% of the window
+     vs model layer-mean (1000-500) advection  corr +0.975   slope +0.893   rms 8.14
+     vs model 1000 mb advection                corr +0.903   slope +0.703   rms 6.96
+     vs model 850 mb advection                 corr +0.971   slope +0.972   rms 8.92
+     vs model 700 mb advection                 corr +0.937   slope +0.943   rms 8.95
+     vs model 500 mb advection                 corr +0.898   slope +0.955   rms 9.42
+   advecting wind, rms m/s:
+     boxology V0 (geostrophic 1000)           12.79
+     model layer-mean (1000-500)              16.14
+     model 1000 mb                            11.07
+     model 850 mb                             14.33
+     model 700 mb                             17.63
+     model 500 mb                             25.26
+
+2. ATTRIBUTION — is that advection the local tendency? (centered 6h)
+   smoothing    boxology vs tendency   true adv vs tendency   boxology vs true adv
+     42 km     corr +0.837 slope +0.616   corr +0.822 slope +0.670   corr +0.979 slope +0.885
+     83 km     corr +0.843 slope +0.622   corr +0.830 slope +0.683   corr +0.982 slope +0.880
+    166 km     corr +0.846 slope +0.619   corr +0.828 slope +0.684   corr +0.980 slope +0.869
+    333 km     corr +0.831 slope +0.591   corr +0.796 slope +0.653   corr +0.972 slope +0.843
+   => advection over-predicts the tendency 1.6x; about 38% of it is canceled
+
+3. CONSEQUENCE — the kinematic forecast against persistence
+   +  6 h   RMSE  2.90 dam   persistence  3.54   SS +0.331   (scaled by 0.62: SS +0.543)   cover  99%
+   + 12 h   RMSE  6.12 dam   persistence  6.81   SS +0.192   (scaled by 0.59: SS +0.424)   cover  98%
+   + 24 h   RMSE 11.01 dam   persistence 11.27   SS +0.046   (scaled by 0.52: SS +0.357)   cover  97%
+   The scaling is a MEASUREMENT, not a correction: it is deliberately not applied in fb_boxfcst.
+BOXOLOGY ON REAL DATA — GFS 2026-03-15 12Z, sindian window
+
+1. FIDELITY — does reading it off two contour families measure the advection?
+   boxology advection rms 6.64 K/day, on 99% of the window
+     vs model layer-mean (1000-500) advection  corr +0.986   slope +0.895   rms 6.03
+     vs model 1000 mb advection                corr +0.903   slope +0.673   rms 4.95
+     vs model 850 mb advection                 corr +0.978   slope +0.973   rms 6.63
+     vs model 700 mb advection                 corr +0.973   slope +0.916   rms 6.26
+     vs model 500 mb advection                 corr +0.974   slope +1.021   rms 6.96
+   advecting wind, rms m/s:
+     boxology V0 (geostrophic 1000)           13.07
+     model layer-mean (1000-500)              15.87
+     model 1000 mb                            10.74
+     model 850 mb                             14.15
+     model 700 mb                             17.38
+     model 500 mb                             24.00
+
+2. ATTRIBUTION — is that advection the local tendency? (centered 6h)
+   smoothing    boxology vs tendency   true adv vs tendency   boxology vs true adv
+     42 km     corr +0.812 slope +0.712   corr +0.800 slope +0.792   corr +0.982 slope +0.870
+     83 km     corr +0.816 slope +0.721   corr +0.807 slope +0.810   corr +0.983 slope +0.865
+    166 km     corr +0.813 slope +0.718   corr +0.801 slope +0.812   corr +0.982 slope +0.856
+    333 km     corr +0.782 slope +0.661   corr +0.758 slope +0.752   corr +0.977 slope +0.833
+   => advection over-predicts the tendency 1.4x; about 29% of it is canceled
+
+3. CONSEQUENCE — the kinematic forecast against persistence
+   +  6 h   RMSE  2.07 dam   persistence  3.02   SS +0.528   (scaled by 0.74: SS +0.599)   cover  99%
+   + 12 h   RMSE  4.26 dam   persistence  5.32   SS +0.361   (scaled by 0.66: SS +0.488)   cover  99%
+   + 24 h   RMSE  7.33 dam   persistence  6.15   SS -0.422   (scaled by 0.37: SS +0.247)   cover  98%
+   The scaling is a MEASUREMENT, not a correction: it is deliberately not applied in fb_boxfcst.
+BOXOLOGY ON REAL DATA — GFS 2026-04-15 00Z, sindian window
+
+1. FIDELITY — does reading it off two contour families measure the advection?
+   boxology advection rms 6.88 K/day, on 99% of the window
+     vs model layer-mean (1000-500) advection  corr +0.976   slope +0.890   rms 6.26
+     vs model 1000 mb advection                corr +0.915   slope +0.756   rms 5.66
+     vs model 850 mb advection                 corr +0.955   slope +0.913   rms 6.55
+     vs model 700 mb advection                 corr +0.941   slope +0.881   rms 6.43
+     vs model 500 mb advection                 corr +0.921   slope +1.009   rms 7.56
+   advecting wind, rms m/s:
+     boxology V0 (geostrophic 1000)           12.70
+     model layer-mean (1000-500)              14.96
+     model 1000 mb                            10.70
+     model 850 mb                             13.39
+     model 700 mb                             16.29
+     model 500 mb                             23.33
+
+2. ATTRIBUTION — is that advection the local tendency? (centered 6h)
+   smoothing    boxology vs tendency   true adv vs tendency   boxology vs true adv
+     42 km     corr +0.687 slope +0.510   corr +0.656 slope +0.543   corr +0.975 slope +0.874
+     83 km     corr +0.684 slope +0.509   corr +0.653 slope +0.548   corr +0.976 slope +0.866
+    166 km     corr +0.658 slope +0.484   corr +0.618 slope +0.519   corr +0.972 slope +0.851
+    333 km     corr +0.568 slope +0.394   corr +0.493 slope +0.401   corr +0.959 slope +0.820
+   => advection over-predicts the tendency 2.0x; about 49% of it is canceled
+
+3. CONSEQUENCE — the kinematic forecast against persistence
+   +  6 h   RMSE  2.50 dam   persistence  2.60   SS +0.075   (scaled by 0.52: SS +0.412)   cover  97%
+   + 12 h   RMSE  5.14 dam   persistence  5.12   SS -0.010   (scaled by 0.49: SS +0.303)   cover  96%
+   + 24 h   RMSE 10.70 dam   persistence  9.56   SS -0.252   (scaled by 0.37: SS +0.131)   cover  93%
+   The scaling is a MEASUREMENT, not a correction: it is deliberately not applied in fb_boxfcst.
+BOXOLOGY ON REAL DATA — GFS 2026-05-15 12Z, sindian window
+
+1. FIDELITY — does reading it off two contour families measure the advection?
+   boxology advection rms 5.49 K/day, on 99% of the window
+     vs model layer-mean (1000-500) advection  corr +0.958   slope +0.823   rms 4.72
+     vs model 1000 mb advection                corr +0.869   slope +0.664   rms 4.16
+     vs model 850 mb advection                 corr +0.932   slope +0.836   rms 4.95
+     vs model 700 mb advection                 corr +0.883   slope +0.791   rms 4.93
+     vs model 500 mb advection                 corr +0.916   slope +1.002   rms 6.00
+   advecting wind, rms m/s:
+     boxology V0 (geostrophic 1000)           14.54
+     model layer-mean (1000-500)              17.28
+     model 1000 mb                            11.73
+     model 850 mb                             15.73
+     model 700 mb                             18.97
+     model 500 mb                             25.19
+
+2. ATTRIBUTION — is that advection the local tendency? (centered 6h)
+   smoothing    boxology vs tendency   true adv vs tendency   boxology vs true adv
+     42 km     corr +0.529 slope +0.504   corr +0.515 slope +0.558   corr +0.958 slope +0.843
+     83 km     corr +0.523 slope +0.512   corr +0.506 slope +0.572   corr +0.958 slope +0.830
+    166 km     corr +0.472 slope +0.479   corr +0.436 slope +0.519   corr +0.949 slope +0.809
+    333 km     corr +0.299 slope +0.309   corr +0.204 slope +0.252   corr +0.914 slope +0.764
+   => advection over-predicts the tendency 2.0x; about 50% of it is canceled
+
+3. CONSEQUENCE — the kinematic forecast against persistence
+   +  6 h   RMSE  2.28 dam   persistence  2.18   SS -0.089   (scaled by 0.46: SS +0.200)   cover  97%
+   + 12 h   RMSE  3.72 dam   persistence  3.51   SS -0.122   (scaled by 0.43: SS +0.185)   cover  95%
+   + 24 h   RMSE  5.65 dam   persistence  5.24   SS -0.164   (scaled by 0.41: SS +0.169)   cover  92%
+   The scaling is a MEASUREMENT, not a correction: it is deliberately not applied in fb_boxfcst.
+BOXOLOGY ON REAL DATA — GFS 2026-06-15 00Z, sindian window
+
+1. FIDELITY — does reading it off two contour families measure the advection?
+   boxology advection rms 8.22 K/day, on 98% of the window
+     vs model layer-mean (1000-500) advection  corr +0.978   slope +0.912   rms 7.66
+     vs model 1000 mb advection                corr +0.887   slope +0.781   rms 7.25
+     vs model 850 mb advection                 corr +0.970   slope +1.068   rms 9.06
+     vs model 700 mb advection                 corr +0.935   slope +1.006   rms 8.85
+     vs model 500 mb advection                 corr +0.870   slope +0.792   rms 7.43
+   advecting wind, rms m/s:
+     boxology V0 (geostrophic 1000)           16.86
+     model layer-mean (1000-500)              18.12
+     model 1000 mb                            13.04
+     model 850 mb                             17.30
+     model 700 mb                             20.06
+     model 500 mb                             26.65
+
+2. ATTRIBUTION — is that advection the local tendency? (centered 6h)
+   smoothing    boxology vs tendency   true adv vs tendency   boxology vs true adv
+     42 km     corr +0.837 slope +0.778   corr +0.820 slope +0.847   corr +0.977 slope +0.878
+     83 km     corr +0.843 slope +0.790   corr +0.828 slope +0.869   corr +0.979 slope +0.874
+    166 km     corr +0.838 slope +0.786   corr +0.821 slope +0.873   corr +0.977 slope +0.862
+    333 km     corr +0.797 slope +0.726   corr +0.759 slope +0.814   corr +0.969 slope +0.823
+   => advection over-predicts the tendency 1.3x; about 22% of it is canceled
+
+3. CONSEQUENCE — the kinematic forecast against persistence
+   +  6 h   RMSE  2.22 dam   persistence  3.60   SS +0.620   (scaled by 0.79: SS +0.678)   cover  96%
+   + 12 h   RMSE  4.39 dam   persistence  6.06   SS +0.476   (scaled by 0.72: SS +0.593)   cover  93%
+   + 24 h   RMSE  7.58 dam   persistence  8.24   SS +0.155   (scaled by 0.57: SS +0.450)   cover  86%
+   The scaling is a MEASUREMENT, not a correction: it is deliberately not applied in fb_boxfcst.
+BOXOLOGY ON REAL DATA — GFS 2026-07-15 12Z, sindian window
+
+1. FIDELITY — does reading it off two contour families measure the advection?
+   boxology advection rms 7.34 K/day, on 98% of the window
+     vs model layer-mean (1000-500) advection  corr +0.979   slope +0.856   rms 6.42
+     vs model 1000 mb advection                corr +0.883   slope +0.648   rms 5.42
+     vs model 850 mb advection                 corr +0.958   slope +0.947   rms 7.25
+     vs model 700 mb advection                 corr +0.946   slope +0.900   rms 6.97
+     vs model 500 mb advection                 corr +0.933   slope +0.927   rms 7.29
+   advecting wind, rms m/s:
+     boxology V0 (geostrophic 1000)           15.64
+     model layer-mean (1000-500)              16.67
+     model 1000 mb                            12.35
+     model 850 mb                             16.12
+     model 700 mb                             18.31
+     model 500 mb                             23.97
+
+2. ATTRIBUTION — is that advection the local tendency? (centered 6h)
+   smoothing    boxology vs tendency   true adv vs tendency   boxology vs true adv
+     42 km     corr +0.778 slope +0.706   corr +0.791 slope +0.827   corr +0.978 slope +0.849
+     83 km     corr +0.777 slope +0.715   corr +0.793 slope +0.851   corr +0.979 slope +0.840
+    166 km     corr +0.748 slope +0.695   corr +0.762 slope +0.847   corr +0.977 slope +0.817
+    333 km     corr +0.637 slope +0.569   corr +0.624 slope +0.706   corr +0.964 slope +0.762
+   => advection over-predicts the tendency 1.4x; about 29% of it is canceled
+
+3. CONSEQUENCE — the kinematic forecast against persistence
+   +  6 h   RMSE  2.59 dam   persistence  3.26   SS +0.371   (scaled by 0.70: SS +0.465)   cover  95%
+   + 12 h   RMSE  5.32 dam   persistence  5.66   SS +0.117   (scaled by 0.57: SS +0.321)   cover  92%
+   + 24 h   RMSE  9.17 dam   persistence  8.45   SS -0.178   (scaled by 0.45: SS +0.227)   cover  86%
+   The scaling is a MEASUREMENT, not a correction: it is deliberately not applied in fb_boxfcst.
+BOXOLOGY ON REAL DATA — GFS 2026-08-15 00Z, sindian window
+
+1. FIDELITY — does reading it off two contour families measure the advection?
+   boxology advection rms 7.19 K/day, on 99% of the window
+     vs model layer-mean (1000-500) advection  corr +0.974   slope +0.876   rms 6.44
+     vs model 1000 mb advection                corr +0.917   slope +0.688   rms 5.38
+     vs model 850 mb advection                 corr +0.946   slope +0.884   rms 6.70
+     vs model 700 mb advection                 corr +0.932   slope +0.922   rms 7.11
+     vs model 500 mb advection                 corr +0.951   slope +1.008   rms 7.62
+   advecting wind, rms m/s:
+     boxology V0 (geostrophic 1000)           16.39
+     model layer-mean (1000-500)              19.29
+     model 1000 mb                            13.33
+     model 850 mb                             17.54
+     model 700 mb                             20.82
+     model 500 mb                             27.62
+
+2. ATTRIBUTION — is that advection the local tendency? (centered 6h)
+   smoothing    boxology vs tendency   true adv vs tendency   boxology vs true adv
+     42 km     corr +0.787 slope +0.617   corr +0.786 slope +0.677   corr +0.975 slope +0.887
+     83 km     corr +0.793 slope +0.625   corr +0.792 slope +0.689   corr +0.976 slope +0.884
+    166 km     corr +0.785 slope +0.612   corr +0.778 slope +0.671   corr +0.975 slope +0.882
+    333 km     corr +0.741 slope +0.542   corr +0.718 slope +0.582   corr +0.968 slope +0.874
+   => advection over-predicts the tendency 1.6x; about 38% of it is canceled
+
+3. CONSEQUENCE — the kinematic forecast against persistence
+   +  6 h   RMSE  2.25 dam   persistence  3.02   SS +0.447   (scaled by 0.69: SS +0.581)   cover  98%
+   + 12 h   RMSE  4.84 dam   persistence  5.45   SS +0.214   (scaled by 0.61: SS +0.437)   cover  97%
+   + 24 h   RMSE  9.92 dam   persistence  8.46   SS -0.374   (scaled by 0.40: SS +0.194)   cover  93%
+   The scaling is a MEASUREMENT, not a correction: it is deliberately not applied in fb_boxfcst.
+BOXOLOGY ON REAL DATA — GFS 2026-09-15 12Z, sindian window
+
+1. FIDELITY — does reading it off two contour families measure the advection?
+   boxology advection rms 9.60 K/day, on 97% of the window
+     vs model layer-mean (1000-500) advection  corr +0.968   slope +0.883   rms 8.77
+     vs model 1000 mb advection                corr +0.887   slope +0.681   rms 7.38
+     vs model 850 mb advection                 corr +0.956   slope +0.960   rms 9.66
+     vs model 700 mb advection                 corr +0.931   slope +0.952   rms 9.83
+     vs model 500 mb advection                 corr +0.877   slope +0.939   rms 10.31
+   advecting wind, rms m/s:
+     boxology V0 (geostrophic 1000)           16.84
+     model layer-mean (1000-500)              19.81
+     model 1000 mb                            14.13
+     model 850 mb                             18.06
+     model 700 mb                             21.25
+     model 500 mb                             30.19
+
+2. ATTRIBUTION — is that advection the local tendency? (centered 6h)
+   smoothing    boxology vs tendency   true adv vs tendency   boxology vs true adv
+     42 km     corr +0.650 slope +0.551   corr +0.636 slope +0.596   corr +0.964 slope +0.873
+     83 km     corr +0.654 slope +0.561   corr +0.641 slope +0.612   corr +0.964 slope +0.867
+    166 km     corr +0.645 slope +0.555   corr +0.624 slope +0.602   corr +0.962 slope +0.859
+    333 km     corr +0.594 slope +0.499   corr +0.550 slope +0.526   corr +0.956 slope +0.839
+   => advection over-predicts the tendency 1.8x; about 45% of it is canceled
+
+3. CONSEQUENCE — the kinematic forecast against persistence
+   +  6 h   RMSE  3.78 dam   persistence  4.25   SS +0.209   (scaled by 0.60: SS +0.377)   cover  94%
+   + 12 h   RMSE  7.13 dam   persistence  8.18   SS +0.241   (scaled by 0.63: SS +0.373)   cover  91%
+   + 24 h   RMSE 13.39 dam   persistence 14.49   SS +0.146   (scaled by 0.59: SS +0.302)   cover  86%
+   The scaling is a MEASUREMENT, not a correction: it is deliberately not applied in fb_boxfcst.
+topo: cached ETOPO icesfc_-120_60_-78_-8 2600x1011 (ETOPO1_ice_surface)
+BOXOLOGY ON REAL DATA — GFS 2025-10-15 00Z, satlantic window
+
+1. FIDELITY — does reading it off two contour families measure the advection?
+   boxology advection rms 10.28 K/day, on 98% of the window
+     vs model layer-mean (1000-500) advection  corr +0.973   slope +0.836   rms 8.84
+     vs model 1000 mb advection                corr +0.776   slope +0.463   rms 6.12
+     vs model 850 mb advection                 corr +0.966   slope +0.909   rms 9.66
+     vs model 700 mb advection                 corr +0.965   slope +0.943   rms 10.05
+     vs model 500 mb advection                 corr +0.937   slope +1.030   rms 11.32
+   advecting wind, rms m/s:
+     boxology V0 (geostrophic 1000)           16.73
+     model layer-mean (1000-500)              17.52
+     model 1000 mb                            13.19
+     model 850 mb                             17.00
+     model 700 mb                             19.06
+     model 500 mb                             25.00
+
+2. ATTRIBUTION — is that advection the local tendency? (centered 6h)
+   smoothing    boxology vs tendency   true adv vs tendency   boxology vs true adv
+     42 km     corr +0.770 slope +0.602   corr +0.787 slope +0.717   corr +0.973 slope +0.835
+     83 km     corr +0.773 slope +0.612   corr +0.790 slope +0.730   corr +0.973 slope +0.833
+    166 km     corr +0.758 slope +0.608   corr +0.771 slope +0.724   corr +0.972 slope +0.829
+    333 km     corr +0.682 slope +0.536   corr +0.674 slope +0.631   corr +0.965 slope +0.811
+   => advection over-predicts the tendency 1.7x; about 40% of it is canceled
+
+3. CONSEQUENCE — the kinematic forecast against persistence
+   +  6 h   RMSE  2.97 dam   persistence  3.44   SS +0.259   (scaled by 0.60: SS +0.458)   cover  94%
+   + 12 h   RMSE  5.67 dam   persistence  5.73   SS +0.020   (scaled by 0.48: SS +0.245)   cover  90%
+   + 24 h   RMSE 10.80 dam   persistence  8.45   SS -0.636   (scaled by 0.09: SS +0.017)   cover  86%
+   The scaling is a MEASUREMENT, not a correction: it is deliberately not applied in fb_boxfcst.
+BOXOLOGY ON REAL DATA — GFS 2025-11-15 12Z, satlantic window
+
+1. FIDELITY — does reading it off two contour families measure the advection?
+   boxology advection rms 8.04 K/day, on 98% of the window
+     vs model layer-mean (1000-500) advection  corr +0.977   slope +0.782   rms 6.46
+     vs model 1000 mb advection                corr +0.857   slope +0.524   rms 5.00
+     vs model 850 mb advection                 corr +0.972   slope +0.917   rms 7.60
+     vs model 700 mb advection                 corr +0.955   slope +0.841   rms 7.11
+     vs model 500 mb advection                 corr +0.916   slope +0.846   rms 7.43
+   advecting wind, rms m/s:
+     boxology V0 (geostrophic 1000)           16.60
+     model layer-mean (1000-500)              16.13
+     model 1000 mb                            11.36
+     model 850 mb                             16.18
+     model 700 mb                             17.88
+     model 500 mb                             22.52
+
+2. ATTRIBUTION — is that advection the local tendency? (centered 6h)
+   smoothing    boxology vs tendency   true adv vs tendency   boxology vs true adv
+     42 km     corr +0.641 slope +0.484   corr +0.689 slope +0.625   corr +0.977 slope +0.813
+     83 km     corr +0.653 slope +0.505   corr +0.701 slope +0.653   corr +0.978 slope +0.811
+    166 km     corr +0.624 slope +0.483   corr +0.675 slope +0.638   corr +0.974 slope +0.798
+    333 km     corr +0.486 slope +0.341   corr +0.542 slope +0.483   corr +0.965 slope +0.759
+   => advection over-predicts the tendency 2.1x; about 52% of it is canceled
+
+3. CONSEQUENCE — the kinematic forecast against persistence
+   +  6 h   RMSE  2.99 dam   persistence  2.98   SS -0.003   (scaled by 0.46: SS +0.260)   cover  94%
+   + 12 h   RMSE  5.42 dam   persistence  4.56   SS -0.414   (scaled by 0.31: SS +0.139)   cover  92%
+   + 24 h   RMSE  8.29 dam   persistence  5.45   SS -1.308   (scaled by 0.18: SS +0.118)   cover  89%
+   The scaling is a MEASUREMENT, not a correction: it is deliberately not applied in fb_boxfcst.
+BOXOLOGY ON REAL DATA — GFS 2025-12-15 00Z, satlantic window
+
+1. FIDELITY — does reading it off two contour families measure the advection?
+   boxology advection rms 5.22 K/day, on 97% of the window
+     vs model layer-mean (1000-500) advection  corr +0.973   slope +0.888   rms 4.76
+     vs model 1000 mb advection                corr +0.845   slope +0.858   rms 5.30
+     vs model 850 mb advection                 corr +0.940   slope +0.883   rms 4.91
+     vs model 700 mb advection                 corr +0.917   slope +0.858   rms 4.89
+     vs model 500 mb advection                 corr +0.895   slope +0.955   rms 5.58
+   advecting wind, rms m/s:
+     boxology V0 (geostrophic 1000)           12.90
+     model layer-mean (1000-500)              13.79
+     model 1000 mb                             9.99
+     model 850 mb                             12.48
+     model 700 mb                             15.05
+     model 500 mb                             22.18
+
+2. ATTRIBUTION — is that advection the local tendency? (centered 6h)
+   smoothing    boxology vs tendency   true adv vs tendency   boxology vs true adv
+     42 km     corr +0.258 slope +0.170   corr +0.294 slope +0.202   corr +0.964 slope +0.925
+     83 km     corr +0.250 slope +0.163   corr +0.278 slope +0.189   corr +0.967 slope +0.925
+    166 km     corr +0.219 slope +0.133   corr +0.222 slope +0.142   corr +0.966 slope +0.916
+    333 km     corr +0.171 slope +0.083   corr +0.129 slope +0.067   corr +0.958 slope +0.891
+   => advection over-predicts the tendency 5.9x; about 83% of it is canceled
+
+3. CONSEQUENCE — the kinematic forecast against persistence
+   +  6 h   RMSE  2.68 dam   persistence  1.64   SS -1.686   (scaled by 0.12: SS +0.032)   cover  95%
+   + 12 h   RMSE  4.85 dam   persistence  2.48   SS -2.810   (scaled by 0.09: SS +0.029)   cover  93%
+   + 24 h   RMSE  8.12 dam   persistence  3.89   SS -3.371   (scaled by 0.13: SS +0.075)   cover  90%
+   The scaling is a MEASUREMENT, not a correction: it is deliberately not applied in fb_boxfcst.
+BOXOLOGY ON REAL DATA — GFS 2026-01-15 12Z, satlantic window
+
+1. FIDELITY — does reading it off two contour families measure the advection?
+   boxology advection rms 3.63 K/day, on 100% of the window
+     vs model layer-mean (1000-500) advection  corr +0.980   slope +0.988   rms 3.69
+     vs model 1000 mb advection                corr +0.915   slope +0.936   rms 3.79
+     vs model 850 mb advection                 corr +0.941   slope +0.947   rms 3.72
+     vs model 700 mb advection                 corr +0.925   slope +1.000   rms 3.89
+     vs model 500 mb advection                 corr +0.938   slope +1.070   rms 4.05
+   advecting wind, rms m/s:
+     boxology V0 (geostrophic 1000)           11.70
+     model layer-mean (1000-500)              13.56
+     model 1000 mb                             9.80
+     model 850 mb                             12.68
+     model 700 mb                             14.86
+     model 500 mb                             19.95
+
+2. ATTRIBUTION — is that advection the local tendency? (centered 6h)
+   smoothing    boxology vs tendency   true adv vs tendency   boxology vs true adv
+     42 km     corr +0.632 slope +0.538   corr +0.618 slope +0.498   corr +0.978 slope +1.033
+     83 km     corr +0.640 slope +0.552   corr +0.628 slope +0.517   corr +0.977 slope +1.023
+    166 km     corr +0.624 slope +0.531   corr +0.604 slope +0.488   corr +0.970 slope +1.022
+    333 km     corr +0.553 slope +0.449   corr +0.523 slope +0.398   corr +0.958 slope +1.022
+   => advection over-predicts the tendency 1.9x; about 46% of it is canceled
+
+3. CONSEQUENCE — the kinematic forecast against persistence
+   +  6 h   RMSE  1.36 dam   persistence  1.86   SS +0.463   (scaled by 0.60: SS +0.490)   cover  99%
+   + 12 h   RMSE  2.79 dam   persistence  3.23   SS +0.255   (scaled by 0.53: SS +0.396)   cover  98%
+   + 24 h   RMSE  7.02 dam   persistence  6.92   SS -0.030   (scaled by 0.48: SS +0.183)   cover  96%
+   The scaling is a MEASUREMENT, not a correction: it is deliberately not applied in fb_boxfcst.
+BOXOLOGY ON REAL DATA — GFS 2026-02-15 00Z, satlantic window
+
+1. FIDELITY — does reading it off two contour families measure the advection?
+   boxology advection rms 9.30 K/day, on 99% of the window
+     vs model layer-mean (1000-500) advection  corr +0.982   slope +0.825   rms 7.84
+     vs model 1000 mb advection                corr +0.881   slope +0.551   rms 5.86
+     vs model 850 mb advection                 corr +0.982   slope +0.972   rms 9.24
+     vs model 700 mb advection                 corr +0.971   slope +0.885   rms 8.51
+     vs model 500 mb advection                 corr +0.960   slope +0.891   rms 8.60
+   advecting wind, rms m/s:
+     boxology V0 (geostrophic 1000)           14.05
+     model layer-mean (1000-500)              15.89
+     model 1000 mb                            10.86
+     model 850 mb                             14.89
+     model 700 mb                             17.49
+     model 500 mb                             23.80
+
+2. ATTRIBUTION — is that advection the local tendency? (centered 6h)
+   smoothing    boxology vs tendency   true adv vs tendency   boxology vs true adv
+     42 km     corr +0.819 slope +0.642   corr +0.833 slope +0.763   corr +0.985 slope +0.844
+     83 km     corr +0.825 slope +0.656   corr +0.844 slope +0.788   corr +0.986 slope +0.840
+    166 km     corr +0.823 slope +0.661   corr +0.845 slope +0.807   corr +0.985 slope +0.829
+    333 km     corr +0.792 slope +0.623   corr +0.818 slope +0.794   corr +0.980 slope +0.796
+   => advection over-predicts the tendency 1.6x; about 36% of it is canceled
+
+3. CONSEQUENCE — the kinematic forecast against persistence
+   +  6 h   RMSE  2.44 dam   persistence  3.41   SS +0.491   (scaled by 0.65: SS +0.657)   cover  96%
+   + 12 h   RMSE  4.44 dam   persistence  5.63   SS +0.380   (scaled by 0.60: SS +0.626)   cover  94%
+   + 24 h   RMSE  6.47 dam   persistence  9.50   SS +0.537   (scaled by 0.69: SS +0.673)   cover  89%
+   The scaling is a MEASUREMENT, not a correction: it is deliberately not applied in fb_boxfcst.
+BOXOLOGY ON REAL DATA — GFS 2026-03-15 12Z, satlantic window
+
+1. FIDELITY — does reading it off two contour families measure the advection?
+   boxology advection rms 5.11 K/day, on 98% of the window
+     vs model layer-mean (1000-500) advection  corr +0.969   slope +0.840   rms 4.43
+     vs model 1000 mb advection                corr +0.781   slope +0.582   rms 3.79
+     vs model 850 mb advection                 corr +0.941   slope +0.892   rms 4.84
+     vs model 700 mb advection                 corr +0.920   slope +0.915   rms 5.11
+     vs model 500 mb advection                 corr +0.923   slope +0.972   rms 5.39
+   advecting wind, rms m/s:
+     boxology V0 (geostrophic 1000)           12.30
+     model layer-mean (1000-500)              12.16
+     model 1000 mb                            10.50
+     model 850 mb                             11.72
+     model 700 mb                             13.30
+     model 500 mb                             18.04
+
+2. ATTRIBUTION — is that advection the local tendency? (centered 6h)
+   smoothing    boxology vs tendency   true adv vs tendency   boxology vs true adv
+     42 km     corr +0.664 slope +0.599   corr +0.653 slope +0.650   corr +0.972 slope +0.881
+     83 km     corr +0.664 slope +0.603   corr +0.649 slope +0.654   corr +0.976 slope +0.880
+    166 km     corr +0.647 slope +0.580   corr +0.618 slope +0.622   corr +0.974 slope +0.869
+    333 km     corr +0.583 slope +0.485   corr +0.516 slope +0.483   corr +0.961 slope +0.854
+   => advection over-predicts the tendency 1.7x; about 40% of it is canceled
+
+3. CONSEQUENCE — the kinematic forecast against persistence
+   +  6 h   RMSE  1.97 dam   persistence  2.53   SS +0.393   (scaled by 0.69: SS +0.460)   cover  97%
+   + 12 h   RMSE  3.40 dam   persistence  4.04   SS +0.291   (scaled by 0.62: SS +0.416)   cover  96%
+   + 24 h   RMSE  5.43 dam   persistence  4.94   SS -0.205   (scaled by 0.40: SS +0.247)   cover  94%
+   The scaling is a MEASUREMENT, not a correction: it is deliberately not applied in fb_boxfcst.
+BOXOLOGY ON REAL DATA — GFS 2026-04-15 00Z, satlantic window
+
+1. FIDELITY — does reading it off two contour families measure the advection?
+   boxology advection rms 4.94 K/day, on 98% of the window
+     vs model layer-mean (1000-500) advection  corr +0.970   slope +0.866   rms 4.41
+     vs model 1000 mb advection                corr +0.831   slope +0.648   rms 3.87
+     vs model 850 mb advection                 corr +0.963   slope +0.902   rms 4.63
+     vs model 700 mb advection                 corr +0.937   slope +0.957   rms 5.04
+     vs model 500 mb advection                 corr +0.948   slope +0.958   rms 4.99
+   advecting wind, rms m/s:
+     boxology V0 (geostrophic 1000)           13.17
+     model layer-mean (1000-500)              13.69
+     model 1000 mb                            11.16
+     model 850 mb                             13.06
+     model 700 mb                             14.87
+     model 500 mb                             19.12
+
+2. ATTRIBUTION — is that advection the local tendency? (centered 6h)
+   smoothing    boxology vs tendency   true adv vs tendency   boxology vs true adv
+     42 km     corr +0.587 slope +0.504   corr +0.589 slope +0.575   corr +0.968 slope +0.851
+     83 km     corr +0.572 slope +0.498   corr +0.575 slope +0.576   corr +0.967 slope +0.840
+    166 km     corr +0.506 slope +0.438   corr +0.494 slope +0.500   corr +0.958 slope +0.819
+    333 km     corr +0.363 slope +0.274   corr +0.307 slope +0.268   corr +0.948 slope +0.819
+   => advection over-predicts the tendency 2.0x; about 50% of it is canceled
+
+3. CONSEQUENCE — the kinematic forecast against persistence
+   +  6 h   RMSE  1.93 dam   persistence  2.03   SS +0.097   (scaled by 0.55: SS +0.298)   cover  97%
+   + 12 h   RMSE  3.73 dam   persistence  3.41   SS -0.198   (scaled by 0.41: SS +0.175)   cover  96%
+   + 24 h   RMSE  5.80 dam   persistence  3.74   SS -1.406   (scaled by 0.15: SS +0.036)   cover  93%
+   The scaling is a MEASUREMENT, not a correction: it is deliberately not applied in fb_boxfcst.
+BOXOLOGY ON REAL DATA — GFS 2026-05-15 12Z, satlantic window
+
+1. FIDELITY — does reading it off two contour families measure the advection?
+   boxology advection rms 4.59 K/day, on 99% of the window
+     vs model layer-mean (1000-500) advection  corr +0.977   slope +0.893   rms 4.18
+     vs model 1000 mb advection                corr +0.846   slope +0.658   rms 3.56
+     vs model 850 mb advection                 corr +0.960   slope +0.982   rms 4.71
+     vs model 700 mb advection                 corr +0.932   slope +0.970   rms 4.77
+     vs model 500 mb advection                 corr +0.919   slope +0.962   rms 4.79
+   advecting wind, rms m/s:
+     boxology V0 (geostrophic 1000)           12.16
+     model layer-mean (1000-500)              15.37
+     model 1000 mb                             9.93
+     model 850 mb                             13.77
+     model 700 mb                             16.69
+     model 500 mb                             23.60
+
+2. ATTRIBUTION — is that advection the local tendency? (centered 6h)
+   smoothing    boxology vs tendency   true adv vs tendency   boxology vs true adv
+     42 km     corr +0.731 slope +0.673   corr +0.743 slope +0.757   corr +0.977 slope +0.882
+     83 km     corr +0.741 slope +0.695   corr +0.759 slope +0.797   corr +0.977 slope +0.873
+    166 km     corr +0.735 slope +0.698   corr +0.757 slope +0.817   corr +0.971 slope +0.854
+    333 km     corr +0.672 slope +0.628   corr +0.689 slope +0.749   corr +0.951 slope +0.818
+   => advection over-predicts the tendency 1.5x; about 33% of it is canceled
+
+3. CONSEQUENCE — the kinematic forecast against persistence
+   +  6 h   RMSE  1.54 dam   persistence  2.29   SS +0.544   (scaled by 0.83: SS +0.569)   cover  99%
+   + 12 h   RMSE  3.12 dam   persistence  3.97   SS +0.380   (scaled by 0.72: SS +0.452)   cover  98%
+   + 24 h   RMSE  5.81 dam   persistence  6.37   SS +0.169   (scaled by 0.57: SS +0.333)   cover  95%
+   The scaling is a MEASUREMENT, not a correction: it is deliberately not applied in fb_boxfcst.
+BOXOLOGY ON REAL DATA — GFS 2026-06-15 00Z, satlantic window
+
+1. FIDELITY — does reading it off two contour families measure the advection?
+   boxology advection rms 6.82 K/day, on 98% of the window
+     vs model layer-mean (1000-500) advection  corr +0.975   slope +0.880   rms 6.16
+     vs model 1000 mb advection                corr +0.881   slope +0.697   rms 5.40
+     vs model 850 mb advection                 corr +0.966   slope +0.963   rms 6.80
+     vs model 700 mb advection                 corr +0.942   slope +0.928   rms 6.72
+     vs model 500 mb advection                 corr +0.908   slope +0.933   rms 7.04
+   advecting wind, rms m/s:
+     boxology V0 (geostrophic 1000)           16.42
+     model layer-mean (1000-500)              18.02
+     model 1000 mb                            12.99
+     model 850 mb                             17.39
+     model 700 mb                             19.68
+     model 500 mb                             25.94
+
+2. ATTRIBUTION — is that advection the local tendency? (centered 6h)
+   smoothing    boxology vs tendency   true adv vs tendency   boxology vs true adv
+     42 km     corr +0.711 slope +0.578   corr +0.712 slope +0.644   corr +0.971 slope +0.873
+     83 km     corr +0.716 slope +0.588   corr +0.719 slope +0.662   corr +0.972 slope +0.866
+    166 km     corr +0.698 slope +0.567   corr +0.693 slope +0.638   corr +0.970 slope +0.855
+    333 km     corr +0.601 slope +0.451   corr +0.563 slope +0.489   corr +0.958 slope +0.829
+   => advection over-predicts the tendency 1.7x; about 42% of it is canceled
+
+3. CONSEQUENCE — the kinematic forecast against persistence
+   +  6 h   RMSE  2.38 dam   persistence  2.63   SS +0.183   (scaled by 0.57: SS +0.420)   cover  94%
+   + 12 h   RMSE  4.35 dam   persistence  4.11   SS -0.122   (scaled by 0.46: SS +0.315)   cover  91%
+   + 24 h   RMSE  6.28 dam   persistence  5.80   SS -0.173   (scaled by 0.45: SS +0.361)   cover  85%
+   The scaling is a MEASUREMENT, not a correction: it is deliberately not applied in fb_boxfcst.
+BOXOLOGY ON REAL DATA — GFS 2026-07-15 12Z, satlantic window
+
+1. FIDELITY — does reading it off two contour families measure the advection?
+   boxology advection rms 4.81 K/day, on 99% of the window
+     vs model layer-mean (1000-500) advection  corr +0.946   slope +0.946   rms 4.84
+     vs model 1000 mb advection                corr +0.871   slope +0.851   rms 4.65
+     vs model 850 mb advection                 corr +0.930   slope +0.966   rms 5.04
+     vs model 700 mb advection                 corr +0.871   slope +0.942   rms 5.24
+     vs model 500 mb advection                 corr +0.849   slope +1.024   rms 5.74
+   advecting wind, rms m/s:
+     boxology V0 (geostrophic 1000)           13.41
+     model layer-mean (1000-500)              14.67
+     model 1000 mb                            11.19
+     model 850 mb                             13.59
+     model 700 mb                             15.94
+     model 500 mb                             22.53
+
+2. ATTRIBUTION — is that advection the local tendency? (centered 6h)
+   smoothing    boxology vs tendency   true adv vs tendency   boxology vs true adv
+     42 km     corr +0.418 slope +0.357   corr +0.464 slope +0.389   corr +0.955 slope +0.973
+     83 km     corr +0.407 slope +0.348   corr +0.451 slope +0.384   corr +0.957 slope +0.961
+    166 km     corr +0.357 slope +0.292   corr +0.380 slope +0.317   corr +0.952 slope +0.935
+    333 km     corr +0.244 slope +0.164   corr +0.212 slope +0.150   corr +0.944 slope +0.896
+   => advection over-predicts the tendency 2.8x; about 64% of it is canceled
+
+3. CONSEQUENCE — the kinematic forecast against persistence
+   +  6 h   RMSE  2.26 dam   persistence  2.30   SS +0.036   (scaled by 0.37: SS +0.244)   cover  97%
+   + 12 h   RMSE  3.92 dam   persistence  3.62   SS -0.170   (scaled by 0.27: SS +0.237)   cover  96%
+   + 24 h   RMSE  6.43 dam   persistence  5.59   SS -0.323   (scaled by 0.22: SS +0.265)   cover  93%
+   The scaling is a MEASUREMENT, not a correction: it is deliberately not applied in fb_boxfcst.
+BOXOLOGY ON REAL DATA — GFS 2026-08-15 00Z, satlantic window
+
+1. FIDELITY — does reading it off two contour families measure the advection?
+   boxology advection rms 8.37 K/day, on 97% of the window
+     vs model layer-mean (1000-500) advection  corr +0.967   slope +0.839   rms 7.24
+     vs model 1000 mb advection                corr +0.852   slope +0.681   rms 6.74
+     vs model 850 mb advection                 corr +0.961   slope +0.939   rms 8.20
+     vs model 700 mb advection                 corr +0.931   slope +0.875   rms 7.82
+     vs model 500 mb advection                 corr +0.877   slope +0.861   rms 8.11
+   advecting wind, rms m/s:
+     boxology V0 (geostrophic 1000)           15.31
+     model layer-mean (1000-500)              18.21
+     model 1000 mb                            12.24
+     model 850 mb                             16.05
+     model 700 mb                             19.61
+     model 500 mb                             28.47
+
+2. ATTRIBUTION — is that advection the local tendency? (centered 6h)
+   smoothing    boxology vs tendency   true adv vs tendency   boxology vs true adv
+     42 km     corr +0.723 slope +0.588   corr +0.722 slope +0.661   corr +0.963 slope +0.855
+     83 km     corr +0.728 slope +0.600   corr +0.732 slope +0.686   corr +0.964 slope +0.848
+    166 km     corr +0.710 slope +0.577   corr +0.710 slope +0.664   corr +0.961 slope +0.836
+    333 km     corr +0.640 slope +0.477   corr +0.615 slope +0.540   corr +0.958 slope +0.814
+   => advection over-predicts the tendency 1.7x; about 41% of it is canceled
+
+3. CONSEQUENCE — the kinematic forecast against persistence
+   +  6 h   RMSE  2.67 dam   persistence  2.81   SS +0.098   (scaled by 0.54: SS +0.446)   cover  93%
+   + 12 h   RMSE  4.90 dam   persistence  5.01   SS +0.043   (scaled by 0.52: SS +0.407)   cover  91%
+   + 24 h   RMSE  8.51 dam   persistence  8.33   SS -0.044   (scaled by 0.50: SS +0.344)   cover  90%
+   The scaling is a MEASUREMENT, not a correction: it is deliberately not applied in fb_boxfcst.
+BOXOLOGY ON REAL DATA — GFS 2026-09-15 12Z, satlantic window
+
+1. FIDELITY — does reading it off two contour families measure the advection?
+   boxology advection rms 8.39 K/day, on 98% of the window
+     vs model layer-mean (1000-500) advection  corr +0.975   slope +0.908   rms 7.83
+     vs model 1000 mb advection                corr +0.925   slope +0.891   rms 8.08
+     vs model 850 mb advection                 corr +0.968   slope +0.999   rms 8.66
+     vs model 700 mb advection                 corr +0.930   slope +0.856   rms 7.75
+     vs model 500 mb advection                 corr +0.948   slope +0.886   rms 7.93
+   advecting wind, rms m/s:
+     boxology V0 (geostrophic 1000)           14.67
+     model layer-mean (1000-500)              16.71
+     model 1000 mb                            11.88
+     model 850 mb                             15.44
+     model 700 mb                             18.40
+     model 500 mb                             26.98
+
+2. ATTRIBUTION — is that advection the local tendency? (centered 6h)
+   smoothing    boxology vs tendency   true adv vs tendency   boxology vs true adv
+     42 km     corr +0.886 slope +0.723   corr +0.875 slope +0.747   corr +0.964 slope +0.921
+     83 km     corr +0.891 slope +0.728   corr +0.880 slope +0.757   corr +0.964 slope +0.917
+    166 km     corr +0.887 slope +0.711   corr +0.871 slope +0.740   corr +0.959 slope +0.906
+    333 km     corr +0.854 slope +0.622   corr +0.822 slope +0.645   corr +0.945 slope +0.877
+   => advection over-predicts the tendency 1.4x; about 28% of it is canceled
+
+3. CONSEQUENCE — the kinematic forecast against persistence
+   +  6 h   RMSE  2.50 dam   persistence  3.73   SS +0.553   (scaled by 0.70: SS +0.616)   cover  96%
+   + 12 h   RMSE  4.90 dam   persistence  6.32   SS +0.399   (scaled by 0.59: SS +0.537)   cover  93%
+   + 24 h   RMSE  8.51 dam   persistence  9.27   SS +0.157   (scaled by 0.45: SS +0.459)   cover  86%
+   The scaling is a MEASUREMENT, not a correction: it is deliberately not applied in fb_boxfcst.
+
+SUMMARY over 48 runs
+{
+ "n_runs": 48,
+ "fidelity": {
+  "model layer-mean (1000-500) advection": {
+   "corr": {
+    "mean": 0.9483792524004323,
+    "min": 0.7776577219032828,
+    "max": 0.9856799849171173,
+    "n": 48
+   },
+   "slope": {
+    "mean": 0.8294176029555151,
+    "min": 0.6297151074748305,
+    "max": 0.9881980593791085,
+    "n": 48
+   }
+  },
+  "model 1000 mb advection": {
+   "corr": {
+    "mean": 0.7834093384893706,
+    "min": 0.3601016204521483,
+    "max": 0.9317015085139913,
+    "n": 48
+   },
+   "slope": {
+    "mean": 0.5799704898439516,
+    "min": 0.15592612948055534,
+    "max": 0.9356916368646869,
+    "n": 48
+   }
+  },
+  "model 850 mb advection": {
+   "corr": {
+    "mean": 0.9082738700321915,
+    "min": 0.6360997366118408,
+    "max": 0.9824980150332291,
+    "n": 48
+   },
+   "slope": {
+    "mean": 0.9073774034863199,
+    "min": 0.5463999817691605,
+    "max": 1.1061567780086476,
+    "n": 48
+   }
+  },
+  "model 700 mb advection": {
+   "corr": {
+    "mean": 0.8871201560757108,
+    "min": 0.642218733221408,
+    "max": 0.9730534637824216,
+    "n": 48
+   },
+   "slope": {
+    "mean": 0.8743990621120834,
+    "min": 0.6428877631778099,
+    "max": 1.0688674487095415,
+    "n": 48
+   }
+  },
+  "model 500 mb advection": {
+   "corr": {
+    "mean": 0.8872821431991561,
+    "min": 0.7174777410262331,
+    "max": 0.9737343492101113,
+    "n": 48
+   },
+   "slope": {
+    "mean": 0.9559234562752295,
+    "min": 0.6783550556794815,
+    "max": 1.1688130968628048,
+    "n": 48
+   }
+  }
+ },
+ "ascent": {
+  "850 mb": {
+   "A_vs_minus_omega": {
+    "mean": 0.10216239981642877,
+    "min": 0.012980652265466689,
+    "max": 0.21247214563819464,
+    "n": 48
+   },
+   "minus_lapA_vs_minus_omega": {
+    "mean": 0.012561623768966537,
+    "min": -0.15677759011660752,
+    "max": 0.3299053495959044,
+    "n": 48
+   }
+  },
+  "700 mb": {
+   "A_vs_minus_omega": {
+    "mean": 0.12073889455775089,
+    "min": -0.004270474924234741,
+    "max": 0.296183668578355,
+    "n": 48
+   },
+   "minus_lapA_vs_minus_omega": {
+    "mean": 0.021148893668857863,
+    "min": -0.18629049737426562,
+    "max": 0.27013602636707296,
+    "n": 48
+   }
+  },
+  "500 mb": {
+   "A_vs_minus_omega": {
+    "mean": 0.09745141398378636,
+    "min": -0.06884394107801553,
+    "max": 0.2936679296315719,
+    "n": 48
+   },
+   "minus_lapA_vs_minus_omega": {
+    "mean": 0.022385129471874515,
+    "min": -0.10352746557593898,
+    "max": 0.15499592993698505,
+    "n": 48
+   }
+  }
+ },
+ "attribution": {
+  "42 km": {
+   "boxology_vs_tendency.corr": {
+    "mean": 0.6225343541520503,
+    "min": 0.1075504805306572,
+    "max": 0.8858007901777577,
+    "n": 48
+   },
+   "boxology_vs_tendency.slope": {
+    "mean": 0.4991454329562388,
+    "min": 0.07724607838558056,
+    "max": 0.7782714971394813,
+    "n": 48
+   },
+   "true_advection_vs_tendency.corr": {
+    "mean": 0.6238618336261116,
+    "min": 0.15072107247954925,
+    "max": 0.8746666965313984,
+    "n": 48
+   },
+   "true_advection_vs_tendency.slope": {
+    "mean": 0.5713747752317618,
+    "min": 0.12414126508390112,
+    "max": 0.857200585881595,
+    "n": 48
+   },
+   "geostrophic_tracks_better": 0.5416666666666666
+  },
+  "83 km": {
+   "boxology_vs_tendency.corr": {
+    "mean": 0.6281766859191534,
+    "min": 0.11621621134414677,
+    "max": 0.8905579830747765,
+    "n": 48
+   },
+   "boxology_vs_tendency.slope": {
+    "mean": 0.5081975005564552,
+    "min": 0.07942556614856437,
+    "max": 0.7897849744030802,
+    "n": 48
+   },
+   "true_advection_vs_tendency.corr": {
+    "mean": 0.6311347634162937,
+    "min": 0.12178374000236178,
+    "max": 0.8799711560549198,
+    "n": 48
+   },
+   "true_advection_vs_tendency.slope": {
+    "mean": 0.5913298150071505,
+    "min": 0.10478536972967226,
+    "max": 0.8969047848421877,
+    "n": 48
+   },
+   "geostrophic_tracks_better": 0.5
+  },
+  "166 km": {
+   "boxology_vs_tendency.corr": {
+    "mean": 0.615146303178832,
+    "min": 0.09467617097456758,
+    "max": 0.8865782308596599,
+    "n": 48
+   },
+   "boxology_vs_tendency.slope": {
+    "mean": 0.4913341829245677,
+    "min": 0.055171027925031764,
+    "max": 0.7859086932476256,
+    "n": 48
+   },
+   "true_advection_vs_tendency.corr": {
+    "mean": 0.6118921116909525,
+    "min": 0.057673397679533944,
+    "max": 0.8710288315679717,
+    "n": 48
+   },
+   "true_advection_vs_tendency.slope": {
+    "mean": 0.5780268814222836,
+    "min": 0.04697408317463346,
+    "max": 0.9081194309397327,
+    "n": 48
+   },
+   "geostrophic_tracks_better": 0.5625
+  },
+  "333 km": {
+   "boxology_vs_tendency.corr": {
+    "mean": 0.5643609360105725,
+    "min": 0.052126002538682874,
+    "max": 0.8541780400329312,
+    "n": 48
+   },
+   "boxology_vs_tendency.slope": {
+    "mean": 0.420004025024254,
+    "min": 0.026348585048201194,
+    "max": 0.7785191494780598,
+    "n": 48
+   },
+   "true_advection_vs_tendency.corr": {
+    "mean": 0.5343043212935158,
+    "min": 0.006703290497915589,
+    "max": 0.8218177220070675,
+    "n": 48
+   },
+   "true_advection_vs_tendency.slope": {
+    "mean": 0.4875652739537495,
+    "min": 0.004593311315651922,
+    "max": 0.8835650947439433,
+    "n": 48
+   },
+   "geostrophic_tracks_better": 0.7916666666666666
+  }
+ },
+ "skill": {
+  "+6 h": {
+   "ss": {
+    "mean": -0.07101041966998102,
+    "min": -2.2897622928559946,
+    "max": 0.6202137247479972,
+    "n": 48
+   },
+   "beats_persistence": 0.5833333333333334
+  },
+  "+12 h": {
+   "ss": {
+    "mean": -0.3534651947169145,
+    "min": -3.1921687461175035,
+    "max": 0.5319698957138315,
+    "n": 48
+   },
+   "beats_persistence": 0.4583333333333333
+  },
+  "+24 h": {
+   "ss": {
+    "mean": -0.8746858834707877,
+    "min": -5.864574371952894,
+    "max": 0.560083005046655,
+    "n": 48
+   },
+   "beats_persistence": 0.20833333333333334
+  }
+ }
+}
+wrote /home/evan/Downloads/boxology_v3/results/verify_12cycles_4windows.json
