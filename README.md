@@ -1,8 +1,13 @@
 # Boxology
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22844862.svg)](https://doi.org/10.5281/zenodo.22844862)
+
 Code, data and results for the preprint **Boxology: the isobar-thickness box
 count as an exact advection integral, and its rendering** (E. J. Lane, 2026;
 revision 3, 18 September 2026). The manuscript is in [`paper/`](paper/).
+
+Every release is archived on Zenodo;
+<https://doi.org/10.5281/zenodo.22844862> always resolves to the newest one.
 
 On a surface chart the isobars and the 1000-500 hPa thickness lines cut the map
 into boxes. The boxes are small where thermal advection is strong, and the sense
