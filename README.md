@@ -88,3 +88,9 @@ carries its own terms.
 
 Lane, E. J., 2026: *Boxology: the isobar-thickness box count as an exact
 advection integral, and its rendering.* Preprint, revision 3.
+<https://doi.org/10.5281/zenodo.22844862>
+
+The companion technical reference the paper cites for the governing equations
+and constants is Lane, E. J., 2026: *FrostByte: Mathematical and physical
+foundations of the product suite*, Volume I,
+<https://doi.org/10.5281/zenodo.22844942>.
