@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite both the software and the preprint below."
+title: "Boxology: code, data and results"
+abstract: "The renderer, trajectory operator, verification harness, figure script and GFS archive reader behind the Boxology preprint."
+type: software
+authors:
+  - family-names: Lane
+    given-names: Evan J.
+    orcid: "https://orcid.org/0009-0001-7841-6087"
+    affiliation: "Independent Researcher, Atlanta, Georgia, USA"
+    email: usmclane92@gmail.com
+repository-code: "https://github.com/cardboardsinxoverx/boxology"
+license: GPL-3.0-or-later
+version: 1.0.0
+date-released: 2026-09-19
+keywords:
+  - synoptic analysis
+  - thermal advection
+  - circulation theorem
+  - objective analysis
+  - chart rendering
+preferred-citation:
+  type: article
+  title: "Boxology: the isobar-thickness box count as an exact advection integral, and its rendering"
+  authors:
+    - family-names: Lane
+      given-names: Evan J.
+      orcid: "https://orcid.org/0009-0001-7841-6087"
+  year: 2026
+  notes: "Preprint, EarthArXiv."

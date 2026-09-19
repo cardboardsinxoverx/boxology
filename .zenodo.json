@@ -1,0 +1,22 @@
+{
+  "title": "Boxology: the isobar-thickness box count as an exact advection integral, and its rendering (code, data and results)",
+  "description": "<p>The renderer, trajectory operator, verification harness, figure script and GFS archive reader behind the preprint <em>Boxology: the isobar-thickness box count as an exact advection integral, and its rendering</em> (E. J. Lane, 2026), together with the per-run results and the Krovanh track file needed to reproduce every figure and number in it.</p>",
+  "upload_type": "software",
+  "license": "GPL-3.0-or-later",
+  "access_right": "open",
+  "creators": [
+    {
+      "name": "Lane, Evan J.",
+      "orcid": "0009-0001-7841-6087",
+      "affiliation": "Independent Researcher, Atlanta, Georgia, USA"
+    }
+  ],
+  "keywords": [
+    "synoptic analysis",
+    "thermal advection",
+    "circulation theorem",
+    "objective analysis",
+    "chart rendering",
+    "GFS"
+  ]
+}
