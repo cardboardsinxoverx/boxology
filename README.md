@@ -80,8 +80,11 @@ ice surface (NOAA National Centers for Environmental Information).
 
 ## License and citation
 
-GNU General Public License, version 3 or later (`LICENSE.txt`).
-Copyright (C) 2026 Evan James Lane.
+Copyright (C) 2026 Evan James Lane. The code is under the GNU General Public
+License, version 3 or later (`LICENSE`); the manuscript and figures in `paper/`
+are under CC BY 4.0 (`paper/LICENSE`), the same license the preprint carries on
+EarthArXiv. `NOTICE.txt` says why the code is GPL and which third-party data
+carries its own terms.
 
 Lane, E. J., 2026: *Boxology: the isobar-thickness box count as an exact
 advection integral, and its rendering.* Preprint, revision 3.

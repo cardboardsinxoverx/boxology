@@ -1,6 +1,6 @@
 {
   "title": "Boxology: the isobar-thickness box count as an exact advection integral, and its rendering (code, data and results)",
-  "description": "<p>The renderer, trajectory operator, verification harness, figure script and GFS archive reader behind the preprint <em>Boxology: the isobar-thickness box count as an exact advection integral, and its rendering</em> (E. J. Lane, 2026), together with the per-run results and the Krovanh track file needed to reproduce every figure and number in it.</p>",
+  "description": "<p>The renderer, trajectory operator, verification harness, figure script and GFS archive reader behind the preprint <em>Boxology: the isobar-thickness box count as an exact advection integral, and its rendering</em> (E. J. Lane, 2026), together with the per-run results and the Krovanh track file needed to reproduce every figure and number in it.</p><p>The code is GPL-3.0-or-later; the manuscript and figures under <code>paper/</code> are CC BY 4.0.</p>",
   "upload_type": "software",
   "license": "GPL-3.0-or-later",
   "access_right": "open",
